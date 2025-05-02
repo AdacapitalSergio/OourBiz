@@ -1,0 +1,117 @@
+.cabecalho {
+    background: rgba(139, 6, 87, 0.8);
+    color: white;
+    padding: 20px 0;
+    position: fixed;         /* <- fixa no topo */
+    top: 0;                  /* gruda no topo */
+    width: 100%;             /* ocupa toda a largura */
+    z-index: 1000; /* garante que fique por cima do conteúdo */
+    backdrop-filter: blur(4px); /* opcional: cria efeito de vidro */
+  }
+
+.componentes{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.links{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+  }
+
+.links a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 400;
+}
+
+.btn-link{
+    border: 2px solid white;
+    border-top-right-radius: 35%;
+    border-top-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+    border-bottom-left-radius: 35%;
+    padding: 0.5rem;   
+}
+
+.link2{
+    border-top-right-radius: 40%;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+}
+
+.links .link1{   
+    background-color: white;
+}
+.link1 a{
+       color: #8B0657;
+}
+
+
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+  }
+.fechar-menu {
+    display: none;
+}
+
+
+/* Para telas pequenas */
+@media (max-width: 768px) {
+    .links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 40%;
+        flex-direction: column;
+        background-color: rgba(139, 6, 87, 0.95);
+        display: none;
+        padding: 1rem 1rem;
+        height: calc(100vh - 70px);
+        z-index: 999;
+        animation: slideIn 0.3s ease forwards;
+      }
+    
+      .links.ativo {
+        display: flex;
+      }
+    
+      .menu-toggle {
+        display: block;
+      }
+    
+      .fechar-menu {
+        display: block;
+        align-self: flex-end;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+    
+      @keyframes slideIn {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+  }  
