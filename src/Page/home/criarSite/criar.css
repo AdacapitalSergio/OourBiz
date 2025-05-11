@@ -1,0 +1,50 @@
+.fisrtTitle{
+    background-color:#bfbfbf;
+    padding: 2rem 40rem 2rem 4rem;
+    font-size: 1.2rem;
+    color: #4F0432;
+}
+.secondTitle{
+    background-color: #bfbfbf;
+    padding: 3rem 20rem 3rem 4rem;
+    font-size: 1.2rem;
+    color: #4F0432;
+}
+.middleTitle{
+    background-color: white;
+    height: 18rem;
+    display: flex;
+}
+
+.leftdiv{
+    width: 50%;
+    background-image: url("../../../assets/pc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+}
+.rigthdiv {
+    width: 50%;
+    background-image: url("../../../assets/pc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+     
+    
+  }
+  
+  .rigthdivTitle {
+    background: rgba(139, 6, 87, 0.8);
+    width: 100%;
+    height: 100%;
+    padding: 4rem 8rem 0rem 8rem;
+    
+    text-align: center;
+  }
+
+  .h1-rigthdiv{
+    padding-bottom: 2rem;
+  }
+  

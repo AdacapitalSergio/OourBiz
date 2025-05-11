@@ -1,0 +1,56 @@
+.consultoria-main{
+    background-image: url("../../../assets/predios.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 3rem 3rem 3rem 4rem;
+}
+
+.titulo-C{
+    padding: 0rem 45rem 3rem 0rem ;
+    font-size: 1.2rem;
+}
+
+.consultoriaServico{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.servicoC{
+   width: 25.1rem;
+   height:18rem;
+   background: rgba(139, 6, 87, 0.8);
+}
+
+.servicoCe{
+    background-image: url("../../../assets/predio2.jpg");
+    width: 25.1rem;
+    height:18rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    
+    
+ }
+
+ .segundoPlano{
+    background: rgba(139, 6, 87, 0.6);
+    width: 100%;
+    height: 100%;
+     }
+
+ .segundo-h1{
+    font-size:2.3rem;
+    text-align: center;
+    padding: 2rem 4rem 0rem 3rem;
+ }
+
+ .btnsC{
+    display: flex;
+    justify-content: space-around   ;
+    
+ }

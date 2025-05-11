@@ -12,9 +12,6 @@ export const Inicio = () => {
                  para desenvolver o potencial do seu negócio.</p>
 
             <a className='btn-consulta' href="">Consulte os nossos serviços</a>
-
-        
-
         </div>
 
     </div>

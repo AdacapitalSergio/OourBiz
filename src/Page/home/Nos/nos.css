@@ -1,0 +1,32 @@
+.nosPrincipal{
+    background-color: #bfbfbf;
+    display: flex;
+}
+
+.descricaoOur{
+    width: 80%;
+    height: 20rem;
+    position: relative;
+    background-color: white;
+}
+.imgDescr{
+    width: 68.5%;
+    height: 30rem;
+    position: relative;
+    background-color: black;
+}
+
+.primeiro{
+    position: absolute;
+}
+
+.segundos{
+    position: relative;
+    margin-left: 59rem;
+    
+}
+
+.imgDes{
+    width: 24rem;
+    height: 51.1rem;
+}

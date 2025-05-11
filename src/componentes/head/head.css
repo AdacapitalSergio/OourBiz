@@ -1,7 +1,7 @@
 .cabecalho {
     background: rgba(139, 6, 87, 0.8);
     color: white;
-    padding: 20px 0;
+    padding: 12.9px 0;
     position: fixed;         /* <- fixa no topo */
     top: 0;                  /* gruda no topo */
     width: 100%;             /* ocupa toda a largura */
@@ -15,6 +15,11 @@
     justify-content: space-between;
     align-items: center;
   }
+
+.logtipo{
+  width: 13rem;
+height: 5rem;
+}
 
 .links{
     display: flex;

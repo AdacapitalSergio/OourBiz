@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './head.css'
-import Logo from '../../assets/logo.png'
+import Logo from '../../assets/Log.png'
 
 export const Head = () => {
 
@@ -10,7 +10,7 @@ export const Head = () => {
     <div className='cabecalho'>
         <div className="componentes">
             
-            <img src={Logo} alt="" />
+            <img className='logtipo' src={Logo} alt="" />
             <button className="menu-toggle" onClick={() => setMenuAberto(!menuAberto)}>
             ☰
             </button>
