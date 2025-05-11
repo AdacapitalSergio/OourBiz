@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.fundo{
+  background-image: url("../../../assets/principal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  color: white;
+  height: 30rem;
+  padding-top: 6.5rem;
+}
+
+
+.segundo{
+  background:rgba(139, 6, 87, 0.8);
+  width: 100%;
+  height: 23.5rem;
+  padding:3rem 40rem 0rem 4rem;
+}
+
+.segundo-h1{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.segundo-p{
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.btn-consulta{
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  font-weight: 800;
+  font-size: medium;
+  padding: 0.8rem; 
+  border-radius: 30px;
+}

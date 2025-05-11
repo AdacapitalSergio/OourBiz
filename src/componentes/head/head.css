@@ -6,8 +6,7 @@
     top: 0;                  /* gruda no topo */
     width: 100%;             /* ocupa toda a largura */
     z-index: 1000; /* garante que fique por cima do conteúdo */
-    backdrop-filter: blur(4px); /* opcional: cria efeito de vidro */
-  }
+      }
 
 .componentes{
     width: 90%;
@@ -76,7 +75,7 @@
 @media (max-width: 768px) {
     .links {
         position: absolute;
-        top: 70px;
+        top: 50px;
         right: 0;
         width: 40%;
         flex-direction: column;
