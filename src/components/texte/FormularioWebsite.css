@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background: #f1f1f1;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.form-box {
+  background: #fff;
+  max-width: 480px;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.form-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4b0040;
+  margin-bottom: 0.5rem;
+}
+
+.form-desc {
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-size: 0.85rem;
+}
+
+.required {
+  color: red;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.check-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.submit-btn {
+  background: #7b0048;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.submit-btn:hover {
+  background: #9e0060;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .form-box {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,249 @@
+.main-sobrefooter {
+    height: auto;
+    display: flex;
+    background: linear-gradient(#9e1168, #680341);
+    padding:  1.9rem 4rem;
+    font-family: 'avenir-lt-w01_35-light1475496',sans-serif;
+    color: #fff;
+}
+
+.aside-sobrefooter {
+    width: 50%;
+    margin-left: 10rem;
+}
+
+.imagem-lofoFooter {
+    width: 18rem;
+    margin: 2.5rem 0 1rem 0;
+}
+
+.p1-sobrefooter {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    letter-spacing: normal;
+    margin-bottom: 1.4rem;
+}
+
+.p2-sobrefooter {
+    font-size: 1rem;
+    font-weight: lighter;
+    letter-spacing: normal;
+    margin-bottom: 2rem;
+    color: #eee;
+    width: 50%;
+}
+
+.a1-sobrefooter {
+    font-size: 1.1rem;
+    font-weight: lighter;
+    letter-spacing: 0.8px;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.a1-sobrefooter:hover {
+    color: #44042b;
+}
+
+.ul-icon {
+    list-style: none;
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 0;
+}
+
+.ul-icon li {
+    font-size: 2rem;
+    margin-left: 1.6%; 
+}
+
+.ul-icon li a {
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.ul-icon li a:hover {
+    color: #44042b;
+}
+
+.h3-sobrefooter {
+    margin: 3rem 0 1rem 10%;
+}
+
+.ul1-servicos {
+    list-style: none;
+    display: table;
+    margin-left: 0;
+}
+
+.ul1-servicos li {
+    text-align: center;
+    padding: 9px;
+    margin-bottom: 8px;
+    background-color: #fff;
+    border-radius: 1rem;
+    transition: all 0.5s;
+    width: 15rem;
+}
+
+.ul1-servicos li:hover {
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.4);
+    background-color: #c75eb5;
+}
+
+.ul1-servicos li a{
+    color: #7c074f;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    letter-spacing: normal;
+    text-decoration: none;
+}
+
+.ul2-servicos {
+    list-style: none;
+    display: table;
+    margin-left: 0;
+    margin-top: 2rem;
+}
+
+.ul2-servicos li {
+    text-align: center;
+    padding: 9px;
+    margin-bottom: 8px;
+    background-color: rgba(247, 243, 248, 0.3);
+    border: #fff 1.8px solid;
+    border-radius: 1rem;
+    transition: all 0.5s;
+    width: 15rem;
+}
+
+.ul2-servicos li:hover {
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.4);
+    background-color: #c75eb5;
+}
+
+.ul2-servicos li a{
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    letter-spacing: normal;
+    text-decoration: none;
+}
+
+@media (max-width: 990px) {
+    .main-sobrefooter {
+        padding:  1.9rem 4rem; 
+    }
+    .aside-sobrefooter {
+        margin-left: 2rem;
+    }
+    
+    .imagem-lofoFooter {
+        width: 16rem;
+        height: 3.8rem;
+    }
+    
+    
+    .p2-sobrefooter {
+        font-size: 0.9rem;
+    }
+    
+    .a1-sobrefooter {
+        font-size: 1.1rem;
+    }
+    
+    .ul-icon li {
+        font-size: 2rem;
+    }
+
+    .ul-servicos li {
+        padding: 8px 0;
+        width: 18rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .main-sobrefooter {
+        padding:  1.9rem 1rem; 
+    }
+    .aside-sobrefooter {
+        margin-left: 1rem;
+    }
+    
+    .imagem-lofoFooter {
+        width: 12rem;
+        height: 3rem;
+        margin: 2.5rem 0 0.8rem 0;
+    }
+    
+    .p1-sobrefooter {
+        font-size: 0.99rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .p2-sobrefooter {
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+    
+    .a1-sobrefooter {
+        font-size: 1rem;
+    }
+    
+    .ul-icon li {
+        font-size: 2rem;
+    }
+
+    .ul-servicos li {
+        padding: 8px 0;
+        width: 12.5rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .main-sobrefooter {
+        padding:  1.9rem 1rem;
+        display: table;
+    }
+    .aside-sobrefooter {
+        width: 94%;
+        margin-left: 11%;
+    }
+    
+    .imagem-lofoFooter {
+        width: 16rem;
+        height: 6.5rem;
+    }
+    
+    .p1-sobrefooter {
+        font-size: 1.1rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .p2-sobrefooter {
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+        width: 90%;
+    }
+    
+    .a1-sobrefooter {
+        font-size: 0.9rem;
+    }
+    
+    .ul-icon li {
+        font-size: 1.5rem;
+    }
+    .h3-sobrefooter {
+        margin: 3rem 0 1rem 0%;
+    }
+
+    .ul1-servicos li {
+        padding: 10px 0;
+        width: 18rem;
+    }
+
+    .ul2-servicos li {
+        padding: 10px 0;
+        width: 18rem;
+    }
+}

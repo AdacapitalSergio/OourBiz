@@ -1,0 +1,95 @@
+.main-nossoscontactos {
+    height: auto;
+    font-family: 'avenir-lt-w01_35-light1475496',sans-serif;
+    background-color: #e9e2e2;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.h1-nossoscontactos {
+    color: #800751;
+    margin: 1rem 0 2rem 0;
+    text-align: center;
+}
+
+.article-nossoscontactos {
+    display: flex;
+    gap: 2rem;
+    margin: 0 0 0 25%;
+}
+
+.div-nossoscontactos {
+    width: 20rem;
+    height: 3rem;
+    padding: 2rem 1rem;
+    color: #161616;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.div-nossoscontactos:hover {
+    transform: translateY(-10%);
+}
+
+.imagem-nossoscontactos {
+    width: 2.5rem;
+}
+
+.h3-nossoscontactosgps {
+    font-size: 0.8rem;
+    width: 70%;
+}
+
+.ul-icon-nossoscontactos {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    margin: 2rem 0 1rem 0;
+}
+
+.ul-icon-nossoscontactos li {
+    font-size: 1.8rem;
+}
+
+.ul-icon-nossoscontactos li a {
+    color: #800751;
+    transition: all 0.5s;
+}
+
+.ul-icon-nossoscontactos li a:hover {
+    color: #3b112b;
+}
+
+@media (max-width: 580px) {
+    .h1-nossoscontactos {
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    .article-nossoscontactos {
+        display: table;
+        gap: 1rem;
+        margin: 0 auto;
+    }
+
+    .div-nossoscontactos {
+        height: 2.6rem;
+        padding: 1.6rem 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .div-nossoscontactos:hover {
+        transform: translateY(0);
+    }
+
+    .h3-nossoscontactosgps {
+        width: 80%;
+    }
+}

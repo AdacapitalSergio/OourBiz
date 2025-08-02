@@ -1,0 +1,114 @@
+.section-quarta {
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    
+}
+
+.article1-quarta {
+    width: 100%;
+    background-image: url('../../assets/imagens/computador.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay-quarta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 50%;
+    bottom: 0;
+    background: linear-gradient(
+        to bottom, 
+        rgba(43, 1, 27, 1),
+        rgba(139, 6, 87, 0.6),
+        rgba(250, 58, 176, 0.9)
+    );
+    transition: all 0.6s;
+}
+
+.article2-quarta  {
+    background-image: url('../../assets/imagens/computador.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.conteiner-content-quarta {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 4rem 0;
+}
+
+.h1-quarta {
+    color: #fff;
+    font-size: 2.5rem;
+    width: 22rem;
+    text-align: left;
+    margin: 0 auto;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+    z-index: 999;
+}
+
+.h2-quarta {
+    color: #fff;
+    z-index: 999;
+    width: 22rem;
+    text-align: left;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1.6rem;
+}
+
+.button-quarta {
+    width: 14rem;
+    height: 3.3rem;
+    margin-left: 24%;
+    margin-bottom: 1rem;
+    border: #fff 1.5px solid;
+    border-radius: 2rem;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(184, 105, 154, 0.5);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.button-quarta:hover {
+    box-shadow: 2px 4px 6px 6px rgba(0, 0, 0, 0.2);
+    background-color: rgba(133, 41, 97, 0.8);
+}
+
+@media (max-width: 580px) {
+    .article1-quarta {
+        display: none;
+    }
+
+    .overlay-quarta {
+        right: 0;
+    }
+    .conteiner-content-quarta {
+        text-align: center;
+    }
+
+    .h1-quarta {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .h2-quarta {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .button-quarta {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,280 @@
+.main-encontre {
+    min-height: 24rem;
+    background-image: url('../../assets/imagens/Background1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'avenir-lt-w01_35-light1475496',sans-serif;
+    padding: 4rem 6rem;
+}
+.section-encontre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.h1-encontre {
+    color: #fff;
+    font-size: 2.5rem;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.article-encontre {
+    width: 21rem;
+    height: auto;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    background: rgba(139, 6, 87, 0.8);
+}
+
+.icon-encontre {
+    margin-left: 38%;
+    margin-bottom: 1rem;
+}
+
+.h3-encontre {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+.ul-encontre {
+    list-style: none;
+    padding: 0;
+}
+
+.li-encontre {
+    color: #fff;
+    display: flex;
+    font-size: 0.8rem;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.li-encontre img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.div-encontre {
+    width: 90%;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.link-encontre {
+    text-decoration: none;
+}
+
+.button1-encontre {
+    padding: 0.5rem 0rem;
+    width: 130px;
+    border-radius: 1rem;
+    border: 1px solid #fff;
+    margin-top: 1rem;
+    transition: all 0.4s;
+}
+
+.button1-encontre:hover {
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.4);
+    background-color: #9e949c;
+}
+
+.button2-encontre {
+    padding: 0.5rem 0rem;
+    width: 130px;
+    background-color: rgba(247, 243, 248, 0.3);
+    border: #fff 1.8px solid;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.button2-encontre:hover {
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.4);
+    background-color: #c75eb5;
+}
+
+.articleso-encontre {
+    background-image: url(../../assets/imagens/Home_pageserviço7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20rem;
+    height: auto;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    margin-right: 2rem;
+}
+
+.h3so-encontre {
+    color: #fff;
+    font-size: 1.8rem;
+    width: 75%;
+    text-align: center;
+    margin: 4rem auto;
+}
+
+.divso-encontre {
+    width: 90%;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.section-encontre.mobile {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.section-encontre.mobile .article-encontre,
+.section-encontre.mobile .articleso-encontre {
+  flex: 0 0 80%;
+  min-width: 80%;
+  scroll-snap-align: center;
+}
+
+/* Indicadores no mobile */
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.indicator-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.indicator-dot.active {
+  background-color: #fff;
+}
+
+@media (max-width: 580px) {
+    .main-encontre {
+        padding: 4rem 1rem;
+    }
+    .section-encontre {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .h1-encontre {
+        font-size: 2rem;
+        width: 95%;
+    }
+
+    .article-encontre {
+        width: 18rem;
+    }
+
+    .icon-encontre {
+        margin-left: 38%;
+        margin-bottom: 1rem;
+        width: 4rem;
+    }
+
+    .h3-encontre {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 0.8rem;
+    }
+
+    .ul-encontre {
+        list-style: none;
+        padding: 0;
+    }
+
+    .li-encontre {
+        color: #fff;
+        display: flex;
+        font-size: 0.8rem;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .li-encontre img {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+    }
+
+    .div-encontre {
+        width: 90%;
+        display: flex;
+        gap: 0.5rem;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .link-encontre {
+        text-decoration: none;
+    }
+
+    .button1-encontre {
+        padding: 0.5rem 0rem;
+        width: 130px;
+        border-radius: 1rem;
+        border: 1px solid #fff;
+        margin-top: 1rem;
+        transition: all 0.4s;
+    }
+
+    .button1-encontre:hover {
+        box-shadow: 2px 4px rgba(0, 0, 0, 0.4);
+        background-color: #9e949c;
+    }
+
+    .button2-encontre {
+        padding: 0.5rem 0rem;
+        width: 130px;
+        background-color: rgba(247, 243, 248, 0.3);
+        border: #fff 1.8px solid;
+        border-radius: 1rem;
+        margin-top: 1rem;
+        color: #fff;
+        transition: all 0.4s;
+    }
+
+    .button2-encontre:hover {
+        box-shadow: 2px 4px rgba(0, 0, 0, 0.4);
+        background-color: #c75eb5;
+    }
+
+    .articleso-encontre {
+        width: 18rem;
+    }
+
+    .h3so-encontre {
+        color: #fff;
+        font-size: 1.8rem;
+        width: 75%;
+        text-align: center;
+        margin: 4rem auto;
+    }
+
+    .divso-encontre {
+        width: 90%;
+        display: flex;
+        gap: 0.5rem;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+}

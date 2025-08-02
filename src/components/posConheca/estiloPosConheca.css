@@ -1,0 +1,159 @@
+.section-pos {
+    width: 100%;
+    min-height: 24rem;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.overdeley-pos {
+    position: absolute;
+    top: 0;
+    left: 61.5%;
+    right: 0;
+    bottom: 0;
+    background: rgba(139, 6, 87, 0.7);
+    transition: all 0.6s;
+}
+
+.article1-pos {
+    width: 160%;
+}
+
+.div-pos {
+    width: 65%;
+    height: 10px;
+    background-color: #8B0657;
+    margin: 2rem auto 4rem auto;
+}
+
+.p-pos {
+    width: 65%;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.5rem;
+    color: #302f2f;
+}
+
+.span-pos {
+    color: #8B0657;
+    font-weight: 600;
+}
+
+.link-pos {
+    color: #8B0657;
+    text-decoration: none;
+    float: right;
+    margin-right: 9.7rem;
+    margin-top: 4rem;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+
+.link-pos:hover {
+    color: #d31d8d;
+    text-decoration: underline;
+}
+
+.link-seta {
+    width: 1.4rem;
+}
+
+.article2-pos {
+    width: 100%;
+    background-image: url('../../assets/imagens/OurBiz_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.section-lucratividade {
+    width: 100%;
+    min-height: 29rem;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.article1-lucratividade {
+    width: 260%;
+    background-image: url('../../assets/imagens/lucratividade.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.article2-lucratividade {
+    background: rgba(139, 6, 87, 0.7);
+    padding-top: 3rem;
+    box-shadow: 0 0 18px rgba(59, 4, 38, 0.9);
+}
+
+.p-lucratividade {
+    width: 65%;
+    margin: 2rem auto;
+    text-align: left;
+    line-height: 1.2rem;
+    border-bottom: 6px #ffffff solid;
+    padding-bottom:  1.6rem;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 580px) {
+    .section-pos {
+        padding-bottom: 4rem;
+    }
+    .overdeley-pos {
+        display: none;
+    }
+
+    .article1-pos {
+        width: 100%;
+    }
+
+    .div-pos {
+        width: 85%;
+        height: 8px;
+    }
+
+    .p-pos {
+        width: 85%;
+    }
+
+    .link-pos {
+        margin-right: 3rem;
+        margin-top: 3rem;
+    }
+
+    .link-seta {
+        width: 1.2rem;
+    }
+
+    .article2-pos {
+        display: none;
+        
+    }
+
+    .section-lucratividade {
+        width: 100%;
+        min-height: 29rem;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .article1-lucratividade {
+        display: none;
+    }
+
+    .article2-lucratividade {
+        padding: 2.4rem 0;
+        box-shadow: 0 0 8px rgba(59, 4, 38, 0.9);
+    }
+
+    .p-lucratividade {
+        width: 85%;
+    }
+}

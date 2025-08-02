@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navBar {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(9px);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(139, 6, 87, 0.7);
+}
+
+.logotipo {
+    width: 220px;
+    height: 90px;
+    margin-left: 9rem;
+}
+
+.navList {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-left: 20%;
+}
+
+.navLi {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+}
+
+.navLi:hover {
+    color: #f74fb4;
+}
+
+.contactar-botao {
+    color: #8B0657;
+    border: #fff solid 1px;
+    padding: 0.8rem;
+    text-align: center;
+    background-color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 2rem;
+    transition: all 0.3s;
+}
+
+.contactar-botao:hover {
+    background-color: #c98cb1;
+}
+
+.login-botao {
+    color: #fff;
+    border: #fff solid 1.4px;
+    padding: 0.8rem;
+    text-align: center;
+    background-color: #6b0946;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 2rem;
+    transition: all 0.3s;
+}
+
+.login-botao:hover {
+    background-color: #b31172;
+}
+
+.menuToggle {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 4rem;
+  z-index: 101;
+}
+
+@media (max-width: 1000px) {
+
+    .logotipo {
+        width: 190px;
+        height: 30px;
+        margin-left: 6rem;
+    }
+    
+    .navList {
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 800px) {
+
+  .menuToggle {
+    display: block;
+  }
+
+  
+  .navBar {
+    height: 70px;
+  }
+  
+
+  .navList {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    background: linear-gradient(135deg, #4F0432, #f0199a);
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    transform: translateY(-200%);
+    transition: all 0.5s ease-in-out;
+    pointer-events: none;
+    margin-left: 0;
+    padding-left: 2rem;
+    padding-top: 6rem;
+    z-index: -1;
+  }
+
+  .navList.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .navLi {
+    font-size: 18px;
+    margin: 4rem 0;
+    padding-bottom: 4px;
+    width: 100%;
+  }
+
+  .logotipo {
+    margin-left: 4rem;
+    width: 92px;
+  }
+
+  .contactar-botao {
+      padding: 0.7rem 1.8rem;
+      font-size: 14px;
+      margin-bottom: 8rem;
+  }
+
+  .login-botao {
+      padding: 0.7rem 2.8rem;
+      font-size: 14px;
+  }
+
+}
+
+@media (max-width: 580px) {
+    
+    .navBar {
+      height: 64px;
+    }
+    
+    .navList {
+      top: 0;
+      height: calc(100vh - 50px);
+      z-index: -1;
+    }
+  
+    .navLi {
+      font-size: 16px;
+    }
+  
+    .logotipo {
+      margin-left: 2rem;
+      width: 110px;
+      height: 50px;
+    }
+
+}

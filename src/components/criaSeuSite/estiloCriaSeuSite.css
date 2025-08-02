@@ -1,0 +1,39 @@
+.section-criaseusite {
+    width: 100%;
+    min-height: 7rem;
+    background-color: #e9e2e2;
+    font-family: 'avenir-lt-w01_35-light1475496', sans-serif;
+}
+
+.section-conheca {
+    width: 100%;
+    min-height: 7rem;
+    background-color: #e9e2e2;
+    font-family: 'avenir-lt-w01_35-light1475496', sans-serif;
+}
+
+.h1-criaseusite {
+    margin-left: 11%;
+    font-weight: 900;
+    font-size: 34px;
+    padding-top: 2.5rem;
+    color: #5e053c;
+}
+
+@media (max-width: 580px) {
+    .section-criaseusite {
+        min-height: 4rem;
+    }
+
+    .section-criaseusite {
+        min-height: 8rem;
+    }
+    
+    .h1-criaseusite {
+        margin-left: 0;
+        text-align: center;
+        font-weight: 600;
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
+}

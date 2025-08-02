@@ -1,0 +1,44 @@
+.section-parceiros {
+    width: 100%;
+    font-family: 'avenir-lt-w01_35-light1475496', sans-serif;
+    height: auto;
+    background-color: #f1f1f1;
+    padding: 2rem 0;
+}
+
+.h1-parceiros {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #6b0c56;
+    margin: 2rem  0 2rem 8rem;
+}
+
+.article-parceiros {
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+    transform: translateX(-50%);
+    margin: 3rem 0 3rem 50%;
+}
+
+.imagem-parceiros {
+    width: 14rem;
+}
+
+@media (max-width: 580px) {
+    .h1-parceiros {
+        font-size: 2rem;
+        margin: 1rem  0 1rem 7%;
+    }
+
+    .article-parceiros {
+        width: 100%;
+        transform: translateX(0);
+        margin: 3rem 0;
+    }
+
+    .imagem-parceiros {
+        width: 35%;
+    }
+
+}

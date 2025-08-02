@@ -1,0 +1,23 @@
+.f-footer {
+    min-height: 5.7rem;
+    background-color: #350422;
+    color: #fff;
+    font-family: 'avenir-lt-w01_35-light1475496',sans-serif;
+    padding: 1rem 2rem;
+}
+
+.f-footer p {
+    font-size: 0.8rem;
+    letter-spacing: normal;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.f-footer p a {
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.f-footer p a:hover {
+    color: #0a0a0a;
+}

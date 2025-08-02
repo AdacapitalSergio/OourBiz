@@ -1,0 +1,92 @@
+.formulario-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #f3f2f5;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-family: 'avenir-lt-w01_35-light1475496',sans-serif;
+}
+
+.formulario-container h1 {
+  color: #520237;
+  margin-bottom: 0.8rem;
+}
+
+.formulario-container p {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.required {
+  color: red;
+  margin-left: 0.2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.3rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.checkbox-group,
+.radio-group {
+  margin-top: 0.5rem;
+}
+
+.checkbox-group label,
+.radio-group label {
+  display: block;
+  margin: 0.3rem 0;
+  font-weight: normal;
+}
+
+.btn-enviar {
+  margin-top: 2rem;
+  background-color: #a1006c;
+  color: #fff;
+  padding: 0.9rem 1.8rem;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-limpar {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  background-color: #ffff;
+  color: #a1006c;
+  padding: 0.9rem 1.8rem;
+  border: #a1006c 1px solid;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #680a48;
+}
+
+.btn-limpar:hover {
+  background-color: #b4afb9;
+}

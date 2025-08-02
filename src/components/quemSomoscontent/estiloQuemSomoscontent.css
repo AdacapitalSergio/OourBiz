@@ -1,0 +1,82 @@
+.main-quemsoomosconten {
+    width: 100%;
+    font-family: 'avenir-lt-w01_35-light1475496', sans-serif;
+    min-height: 40rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #f1f1f1;
+    padding-bottom: 2rem;
+}
+
+.h1-quemsoomosconten {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #6b0c56;
+    margin: 4rem  0 2rem 8rem;
+}
+
+.section-quemsoomosconten {
+    display: flex;
+    padding: 2rem 0 2rem 8rem;
+    position: relative;
+    align-items: center;
+}
+
+.article-quemsoomosconten {
+    width: 60%;
+}
+
+.p-quemsoomosconten {
+    color: #414141;
+    line-height: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.article2-quemsoomosconten {
+    background-image: url('../../assets/imagens/QuemSomosContent.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    position: absolute;
+    right: -11rem;
+}
+
+@media (max-width: 580px) {
+    .main-quemsoomosconten {
+        width: 100%;
+        font-family: 'avenir-lt-w01_35-light1475496', sans-serif;
+        min-height: 40rem;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background-color: #f1f1f1;
+        padding-bottom: 2rem;
+    }
+
+    .h1-quemsoomosconten {
+        font-size: 2rem;
+        margin: 4rem  0 2rem 7%;
+    }
+
+    .section-quemsoomosconten {
+        display: table;
+        padding: 1rem 0 2rem 7%;
+    }
+
+    .article-quemsoomosconten {
+        width: 94%;
+    }
+
+    .article2-quemsoomosconten {
+        background-image: url('../../assets/imagens/QuemSomosContent.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 18rem;
+        width: 95%;
+        border-radius: 8px;
+        position: relative;
+        right: 0;
+        top: 1rem;
+    }
+
+}

@@ -1,0 +1,329 @@
+.main-encontre-servico {
+    min-height: 22rem;
+    background-color: #e9e2e2;
+    font-family: 'avenir-lt-w01_35-light1475496',sans-serif;
+    padding: 4rem 0 0 0;
+}
+
+.divb {
+    background-color: #fff;
+    height: 4rem;
+}
+.section-encontre-servico {
+    padding: 2rem 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.h1-encontre-servico {
+    color: #61063e;
+    font-size: 2.5rem;
+    width: 48%;
+    margin-left: 7%;
+    margin-bottom: 1rem;
+}
+
+.article-encontre-servico {
+    width: 21rem;
+    height: auto;
+    padding: 2rem 1rem;
+    border-radius: 4px;
+    background: #8b0657;
+    color: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+    cursor: default;
+    transition: all 0.4s;
+}
+
+.bgc-branco {
+    cursor: default;
+    width: 21rem;
+    height: auto;
+    padding: 2rem 1rem;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px #8b0657 solid;
+    color: #8b0657;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+    transition: all 0.4s;
+    display: flex;
+}
+
+.article-encontre-servico:hover,
+.bgc-branco:hover,
+.articleso-encontre-servico:hover {
+    opacity: 0.7;
+}
+
+.h3-encontre-servico {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-detalhes {
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.h32-encontre-servico {
+    text-align: left;
+    font-size: 2rem;
+    color: #8b0657;
+    padding-top: 2rem;
+    margin-left: 7%;
+}
+
+.detalhes-servico-imagem {
+    width: 100%;
+    height: 14rem;
+    display: none;
+}
+
+.articleso-encontre-servico {
+    background-image: url(../../assets/imagens/Home_pageserviço7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 21rem;
+    height: auto;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    color: #fff;
+    cursor: default;
+    transition: all 0.4s;
+}
+
+.detalhes-servico {
+    background-color: #fff;
+    margin-top: 2rem;
+    min-height: 30rem;
+    animation: fade-in 0.5s ease forwards;
+}
+
+.conteudo-detalhes {
+    max-width: auto;
+}
+
+.animate-slide {
+    animation: slide-left 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+@keyframes slide-left {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.cards-sub-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-left: 4%;
+    padding: 2rem;
+}
+
+.card-sub {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 1.5rem;
+    color: #303030;
+    width: 18rem;
+    min-height: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: #f0eeee 1px solid;
+}
+
+.card-sub:hover {
+    transform: translateY(-5px);
+}
+
+.card-sub h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-sub p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.card-sub ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card-sub ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.card-sub ul li img {
+    margin-right: 0.5rem;
+    width: 16px;
+    height: 16px;
+}
+
+.divso-encontreservico {
+    width: auto;
+    display: flex;
+    gap: 0.5rem;
+    margin: 0 0 0 12%;
+}
+.button2-encontreservico {
+    padding: 1rem 0rem;
+    width: 10rem;
+    background-color: #8b0657;
+    border: #fff 1.8px solid;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.button2-encontreservico:hover {
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.4);
+    background-color: #c75eb5;
+}
+
+.link-encontreservico {
+    text-decoration: none;
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    background-color: #8b0657;
+}
+
+.div-links {
+    width: 100%;
+    padding: 2rem 0;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.link-links {
+    color: #8b0657;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.link-img {
+    width: 1.2rem;
+    margin: 0 8px;
+}
+
+@media (max-width: 580px) {
+    .main-encontre-servico {
+        min-height: 22rem;
+        background-color: #e9e2e2;
+        font-family: 'avenir-lt-w01_35-light1475496',sans-serif;
+        padding: 4rem 0 0 0;
+    }
+
+    .divb {
+        background-color: #fff;
+        height: 4rem;
+    }
+    .section-encontre-servico {
+        padding: 2rem 0;
+        width: auto;
+    }
+
+    .h1-encontre-servico {
+        color: #61063e;
+        font-size: 1.5rem;
+        width: 90%;
+        margin-left: 7%;
+    }
+
+    .article-encontre-servico {
+        width: 78%;
+        padding: 1.2rem 1rem;
+        margin-left: 7%;
+    }
+
+    .bgc-branco {
+        width: 78%;
+        height: auto;
+    }
+
+    .icon-detalhes {
+        width: 2rem;
+    }
+
+    .detalhes-servico-imagem {
+        width: 92%;
+        height: 25rem;
+        display: block;
+        margin-left: 4%;
+        margin-top: 1rem;
+        border-radius: 4px;
+    }
+
+    .articleso-encontre-servico {
+        width: 78%;
+        padding: 2rem 1rem;
+        margin-left: 7%;
+    }
+
+    .cards-sub-container {
+        gap: 1rem;
+        margin-left: 0;
+        padding: 2rem 0;
+    }
+
+    .card-sub {
+        padding: 1.5rem 1rem;
+        width: 80%;
+    }
+
+    .divso-encontreservico {
+        margin: 0 0 0 7%;
+    }
+
+    .div-links {
+        width: auto;
+        padding: 2rem 0;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+    }
+
+    .link-links {
+        font-size: 1rem;
+    }
+
+    .link-img {
+        width: 1rem;
+    }
+}

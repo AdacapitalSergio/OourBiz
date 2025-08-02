@@ -1,0 +1,140 @@
+.section-confia {
+    height: auto;
+    padding: 2rem 0;
+    font-family: 'avenir-lt-w01_35-light1475496',sans-serif;
+    background-color: #fff;
+}
+
+.h1-confia {
+    color: #5f033c;
+    font-size: 2.3rem;
+    width: 35%;
+    margin-left: 7%;
+    margin-bottom: 2rem;
+}
+
+.article1-confia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.article2-confia {
+    background-color: #5f033c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    color: #fff;
+}
+.h2-confia {
+    font-size: 6rem;
+    color: #5f033c;
+    margin-left: 7%;
+    font-weight: 900;
+}
+
+.h22-confia {
+    font-size: 6rem;
+    color: #fff;
+    margin-left: 7%;
+    font-weight: 900;
+}
+.div-confia {
+    width: 26%;
+
+}
+
+.h3-confia {
+    color: #810752;
+    margin-bottom: 1rem;
+}
+
+.h32-confia {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.p-confia {
+    text-align: left;
+}
+
+.imagem-confia {
+    width: 27%;
+    margin-right: 7%;
+    box-shadow: -10px 10px 8px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+}
+
+@media (max-width: 580px) {
+    .section-confia {
+        padding: 2rem 0;
+    }
+    .h1-confia {
+        font-size: 1.8rem;
+        width: 95%;
+        margin-left: 1rem;
+    }
+
+    .article1-confia {
+        display: table;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0 3rem 0;
+        width: 100%;
+    }
+
+    .article2-confia {
+        background-color: #5f033c;
+        display: table;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        color: #fff;
+    }
+    .h2-confia {
+        margin-left: 0%;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .h22-confia {
+        margin-left: 0%;
+        text-align: center;
+        font-size: 4rem;
+    }
+    .div-confia {
+        width: 100%;
+
+    }
+
+    .h3-confia {
+        color: #810752;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .h32-confia {
+        color: #fff;
+        margin: 1rem;
+        text-align: center;
+    }
+    .p-confia {
+        text-align: left;
+        padding: 0.8rem;
+    }
+
+    .p2-confia {
+        text-align: left;
+        padding: 0.8rem;
+    }
+
+    .imagem-confia {
+        width: 95%;
+        margin-right: 0;
+        margin-left: 2%;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+        border-radius: 5px;
+    }
+
+}

@@ -1,0 +1,169 @@
+.section-cadastro {
+    width: 100%;
+    min-height: 492px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    
+}
+
+.article1-cadastro {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.imagem-seta {
+    margin: 0 0 0 2rem;
+    width: 2rem;
+}
+
+.div-linha-cadastro {
+    width: 100%;
+    height: 1px;
+    background-color: #420142;
+    margin: 1rem 0;
+}
+
+.h2-cadastro2 {
+    text-align: center;
+    color: #680268;
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+
+.formulario-cadastro {
+    margin: 0 auto;
+}
+
+.input-cadastro {
+    width: 20rem;
+    height: 1.4rem;
+    border-radius: 1.5rem;
+    border: 1px solid #696969;
+    background-color: #eeeeee;
+    padding-left: 15px;
+    margin: 0rem 0 1rem 25%;
+}
+
+.btn-cadastro {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    background-color: #830483;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    margin: 1rem 0 1.5rem 37%;
+    transition: all 0.4s;
+}
+
+.btn-cadastro:hover {
+    background-color: #d105d1;
+}
+
+.link-cadastro {
+    margin: 2rem 0 0 30%;
+    text-decoration: none;
+    color: #363636;
+}
+
+.link-cadastro span {
+    color: #680268;
+    font-weight: 600;
+}
+.overlay-cadastro {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    background: rgba(139, 6, 87, 0.7);
+    transition: all 0.6s;
+}
+
+.article2-cadastro  {
+    background-image: url('../../assets/imagens/BunnerPrincipal.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-loog-cadastro {
+    width: 28rem;
+    margin: 4rem 0 0 15%;
+}
+
+.conteiner-content-cadastro {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 4rem 0;
+}
+
+.button-cadastro {
+    width: 14rem;
+    height: 3.3rem;
+    margin-left: 24%;
+    margin-bottom: 1rem;
+    border: #fff 1.5px solid;
+    border-radius: 2rem;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(184, 105, 154, 0.5);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.button-cadastro:hover {
+    box-shadow: 2px 4px 6px 6px rgba(0, 0, 0, 0.2);
+    background-color: rgba(133, 41, 97, 0.8);
+}
+
+@media (max-width: 580px) {
+    .section-cadastro {
+        min-height: 85vh;        
+    }
+
+    .article1-cadastro {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .imagem-seta {
+        margin: 0 0 0 2rem;
+        width: 1.5rem;
+    }
+
+    .h2-cadastro2 {
+        margin: 2rem 0;
+    }
+
+    .input-cadastro {
+        width: 75%;
+        margin: 0rem 0 1rem 10%;
+    }
+
+    .btn-cadastro {
+        width: 14rem;
+        margin: 1rem 0 1.5rem 22%;
+    }
+    .link-cadastro {
+        margin: 2rem 0 0 16%;
+        text-decoration: none;
+        color: #363636;
+    }
+
+    .overlay-cadastro {
+        display: none;
+    }
+
+    .article2-cadastro  {
+        display: none;
+    }
+
+}
