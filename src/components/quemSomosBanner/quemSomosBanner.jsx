@@ -13,7 +13,7 @@ const QuemSomosBanner = () => {
                 <p className="p-quemSomos">
                     Saiba mais sobre quem somos e o porquê confiar a sua empresa a nós. 
                 </p>
-                <Link to="/#">
+                <Link to="/contactar">
                     <button className='button-quemSomos'>
                         Fale com nossos especialistas
                     </button>

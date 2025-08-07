@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 export default function EncontreMelhorServico() {
   const [servicoSelecionado, setServicoSelecionado] = useState(servicoDetalhes[0]);
 
-  // índice do serviço atual
   const currentIndex = servicoDetalhes.findIndex(
     (s) => s.id === servicoSelecionado.id
   );
@@ -53,7 +52,6 @@ export default function EncontreMelhorServico() {
 
       {servicoSelecionado && (
         <section className="detalhes-servico">
-          <div className="divb"></div>
           <div className="linha"></div>
           <h3 className="h32-encontre-servico">
             {servicoSelecionado.titulo}

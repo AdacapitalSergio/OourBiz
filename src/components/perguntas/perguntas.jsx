@@ -1,13 +1,6 @@
 import React, { useState } from 'react';
 import './estiloPerguntas.css';
-
-const perguntasRespostas = [
-  { pergunta: "Pergunta 1", resposta: "Esta é a resposta da pergunta 1." },
-  { pergunta: "Pergunta 2", resposta: "Esta é a resposta da pergunta 2." },
-  { pergunta: "Pergunta 3", resposta: "Esta é a resposta da pergunta 3." },
-  { pergunta: "Pergunta 4", resposta: "Esta é a resposta da pergunta 4." },
-  { pergunta: "Pergunta 5", resposta: "Esta é a resposta da pergunta 5." },
-];
+import { perguntasRespostas } from '../../data/perguntas';
 
 const Perguntas = () => {
   const [aberta, setAberta] = useState(null);

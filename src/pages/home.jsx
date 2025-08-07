@@ -21,7 +21,6 @@ export default function Home() {
     <>
         <Header />
         <PrincipalBanner />
-        <CriaSeuSite />
         <QuartaSection />
         <Conheca />
         <PosConheca />

@@ -14,9 +14,8 @@ export default function Servicos() {
         <Header />
         <ServicoBanner />
         <EncontreMelhorServico />
-        <CriaSeuSite />
         <QuartaSection />
-        <CriaSeuSite />
+
         <SobreFooter />
         <Footer />
     </>

@@ -5,19 +5,10 @@
     position: relative;
 }
 
-.div-continner-missao {
-    position: absolute;
-    display: flex;
-    gap: 3rem;
-    top: 4rem;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .article-missao {
     width: 16rem;
     height: auto;
-    padding: 1rem 1rem;
+    padding: 1rem;
     border-radius: 8px;
     background: #ffffff;
     color: #313131;
@@ -67,12 +58,11 @@
   position: absolute;
   display: flex;
   gap: 3rem;
-  top: 4rem;
+  top: 0rem;
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* Quando está em modo mobile */
 .div-continner-missao.mobile {
   position: relative;
   top: 0;

@@ -14,7 +14,7 @@ const PlanosBanner = () => {
                     Tenha a possibilidade de escolher um plano que melhor 
                     atenda as necessidades do seu negócio. 
                 </p>
-                <Link to="/#">
+                <Link to="/contactar">
                     <button className='button-planos'>
                         Fale com nossos especialistas
                     </button>

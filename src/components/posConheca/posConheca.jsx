@@ -18,7 +18,7 @@ export default function PosConheca() {
                 em consultoria para micros, pequenas e médias empresas, instituições 
                 públicas e do terceiro sector, com foco em pequenas empresas.
             </p>
-            <Link to="/" className="link-pos">Saiba mais sobre nós <img src={ seta } alt="Seta" className="link-seta" /></Link>
+            <Link to="/quemsomos" className="link-pos">Saiba mais sobre nós <img src={ seta } alt="Seta" className="link-seta" /></Link>
         </article>
         <article className="article2-pos">
             {/*<img src={ logoVio } alt="Logotipo da AdaCapital" className="logotipo" />*/}

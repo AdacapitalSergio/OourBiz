@@ -13,9 +13,9 @@ const ContactarBanner = () => {
                 <p className="p-contactar">
                     Fale connosco sem assumir qualquer tipo de compromisso.
                 </p>
-                <Link to="/#">
+                <Link to="/servicos">
                     <button className='button-contactar'>
-                        Fale com nossos especialistas
+                        Consulte os nossos serviços 
                     </button>
                 </Link>
             </article>

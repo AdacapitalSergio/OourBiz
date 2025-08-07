@@ -14,7 +14,7 @@ const CriarSiteBanner = () => {
                     Transforme a sua ideia num site profissional, encomende agora 
                     e conquiste o mundo online.
                 </p>
-                <Link to="/#contactar">
+                <Link to="/contactar">
                     <button className='button-criarsite'>
                         Fale com nossos especialistas
                     </button>

@@ -14,7 +14,7 @@ const ServicoBanner = () => {
                     Veja qual dos nossos serviços poderá ajudar a 
                     trasnformar o teu negócio. 
                 </p>
-                <Link to="/#">
+                <Link to="/contactar">
                     <button className='button-servicos'>
                         Fale com nossos especialistas
                     </button>

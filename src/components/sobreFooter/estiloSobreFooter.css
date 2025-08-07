@@ -81,7 +81,7 @@
     padding: 9px;
     margin-bottom: 8px;
     background-color: #fff;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     transition: all 0.5s;
     width: 15rem;
 }
@@ -112,7 +112,7 @@
     margin-bottom: 8px;
     background-color: rgba(247, 243, 248, 0.3);
     border: #fff 1.8px solid;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     transition: all 0.5s;
     width: 15rem;
 }

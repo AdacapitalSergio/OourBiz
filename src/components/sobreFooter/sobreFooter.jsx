@@ -55,11 +55,11 @@ export default function SobreFooter() {
       <aside className="aside-sobrefooter">
         <h3 className="h3-sobrefooter">Nossos serviços</h3>
         <ul className="ul1-servicos">
-            <li><p></p><a href="/#comunicar">Consultoria para MPMEs</a></li>
-            <li><a href="/#comunicar">Consultoria para Startups</a></li>
-            <li><a href="/#comunicar">Eventos e formação</a></li>
-            <li><a href="/#comunicar">Marketing e estratégia</a></li>
-            <li><a href="/#comunicar">Apoio e captação de recursos</a></li>   
+            <li><p></p><a href="/#">Consultoria para MPMEs</a></li>
+            <li><a href="/#">Consultoria para Startups</a></li>
+            <li><a href="/#">Eventos e formação</a></li>
+            <li><a href="/#">Marketing e estratégia</a></li>
+            <li><a href="/">Apoio e captação de recursos</a></li>   
         </ul>
 
         <ul className="ul2-servicos">
