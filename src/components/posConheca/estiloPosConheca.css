@@ -3,21 +3,22 @@
     min-height: 24rem;
     display: flex;
     justify-content: space-around;
-    position: relative;
 }
 
 .overdeley-pos {
     position: absolute;
     top: 0;
-    left: 61.5%;
+    left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(139, 6, 87, 0.7);
+    background: rgba(139, 6, 87, 0.9);
+    box-shadow: 0 0 18px rgba(59, 4, 38, 0.9);
     transition: all 0.6s;
 }
 
 .article1-pos {
-    width: 160%;
+    width: 50%;
+    margin-bottom: 3rem;
 }
 
 .div-pos {
@@ -60,11 +61,12 @@
 }
 
 .article2-pos {
-    width: 100%;
+    width: 50%;
     background-image: url('../../assets/imagens/OurBiz_logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
     
 }
 
@@ -85,9 +87,9 @@
 }
 
 .article2-lucratividade {
-    background: rgba(139, 6, 87, 0.7);
-    padding-top: 3rem;
-    box-shadow: 0 0 18px rgba(59, 4, 38, 0.9);
+    padding-top: 1rem;
+    position: relative;
+    z-index: 1;
 }
 
 .p-lucratividade {
@@ -103,14 +105,12 @@
 
 @media (max-width: 580px) {
     .section-pos {
-        padding-bottom: 4rem;
-    }
-    .overdeley-pos {
-        display: none;
+        display: table;
     }
 
     .article1-pos {
         width: 100%;
+        margin-bottom: 8rem;
     }
 
     .div-pos {
@@ -132,8 +132,7 @@
     }
 
     .article2-pos {
-        display: none;
-        
+        width: 100%;
     }
 
     .section-lucratividade {
@@ -150,7 +149,6 @@
 
     .article2-lucratividade {
         padding: 2.4rem 0;
-        box-shadow: 0 0 8px rgba(59, 4, 38, 0.9);
     }
 
     .p-lucratividade {

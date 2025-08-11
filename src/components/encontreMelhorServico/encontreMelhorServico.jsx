@@ -107,12 +107,12 @@ export default function EncontreMelhorServico() {
           </div>
 
           <div className="divso-encontreservico">
-            <Link className="link-encontreservico">
+            <Link className="link-encontreservico" to={"/planos"}>
               <button className="button2-encontreservico">
                 {servicoSelecionado.textBotao1}
               </button>
             </Link>
-            <Link className="link-encontreservico">
+            <Link className="link-encontreservico" to={"/contactar"}>
               <button className="button2-encontreservico">
                 {servicoSelecionado.textBotao2}
               </button>

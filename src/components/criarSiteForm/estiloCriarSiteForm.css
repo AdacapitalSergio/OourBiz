@@ -48,14 +48,14 @@ textarea {
 
 .checkbox-group,
 .radio-group {
-  margin-top: 0.5rem;
+  margin-top: 0.5rem; 
 }
 
 .checkbox-group label,
 .radio-group label {
   display: block;
   margin: 0.3rem 0;
-  font-weight: normal;
+  font-weight: normal
 }
 
 .btn-enviar {

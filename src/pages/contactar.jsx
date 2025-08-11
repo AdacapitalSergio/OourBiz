@@ -4,6 +4,7 @@ import SobreFooter from "../components/sobreFooter/sobreFooter";
 import Footer from "../components/footer/footer";
 import ContactarBanner from "../components/contactarBanner/contactarBanner";
 import NossosContactos from "../components/nossosContactos/nossosContactos";
+import ContactForm from "../components/contactForm/ContactForm";
 
 export default function Contactar() {
 
@@ -12,6 +13,7 @@ export default function Contactar() {
         <Header />
         <ContactarBanner />
         <NossosContactos />
+        <ContactForm />
         <SobreFooter />
         <Footer />
     </>

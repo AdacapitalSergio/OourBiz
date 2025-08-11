@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../components/header/header";
 import PrincipalBanner from "../components/principalBanner/principalBanner";
-import CriaSeuSite from "../components/criaSeuSite/criaSeuSite";
 import QuartaSection from "../components/quartaSection/quartaSection";
 import Conheca from "../components/criaSeuSite/conheca";
 import SobreFooter from "../components/sobreFooter/sobreFooter";
@@ -21,15 +20,16 @@ export default function Home() {
     <>
         <Header />
         <PrincipalBanner />
+        <Conheca titulo="Dinamize e modernize o seu negócio" />
         <QuartaSection />
-        <Conheca />
+        <Conheca titulo="Conheça a OurBiz" />
         <PosConheca />
-        <Lucatividade />
+       
         <EncontreMelhor />
         <ConfieSuaEmpresa />
         <QueFalamSobre />
         <CrieSeuNegocio />
-        <CriaSeuSite />
+        <Conheca />
         <ArtigosRecentes />
         <Perguntas />
         <SobreFooter />

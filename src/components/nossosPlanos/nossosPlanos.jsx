@@ -231,7 +231,7 @@ export default function NossosPlanos() {
                   <div className="div-linha-nossosplanos"></div>
                   <p>{plano.observacao}</p>
                   <div className="div-linha-nossosplanos"></div>
-                  <p>{plano.preco}</p>
+                  <p className="p-preco">{plano.preco}</p>
                   <div className="divso-nossosplanos">
                     <button className="button2-nossosplanos">Comprar</button>
                   </div>

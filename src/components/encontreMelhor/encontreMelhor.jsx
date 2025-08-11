@@ -64,19 +64,19 @@ export default function EncontreMelhor() {
               <h3 className="h3-encontre">{item.titulo}</h3>
               <ul className="ul-encontre">
                 <li className="li-encontre">
-                  <img src={iconV} />
+                  
                   {item.li1}
                 </li>
                 <li className="li-encontre">
-                  <img src={iconV} />
+                  
                   {item.li2}
                 </li>
                 <li className="li-encontre">
-                  <img src={iconV} />
+                  
                   {item.li3}
                 </li>
                 <li className="li-encontre">
-                  <img src={iconV} />
+                  {/*<img src={iconV} />*/}
                   {item.li4}
                 </li>
               </ul>

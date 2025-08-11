@@ -26,6 +26,10 @@
     width: 6rem;
 }
 
+.imagem2-parceiros {
+    width: 10rem;
+}
+
 @media (max-width: 580px) {
     .h1-parceiros {
         font-size: 2rem;
@@ -42,4 +46,7 @@
         width: 35%;
     }
 
+    .imagem2-parceiros {
+        width: 40%;
+    }
 }

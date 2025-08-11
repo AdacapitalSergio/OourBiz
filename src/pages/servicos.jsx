@@ -15,7 +15,6 @@ export default function Servicos() {
         <ServicoBanner />
         <EncontreMelhorServico />
         <QuartaSection />
-
         <SobreFooter />
         <Footer />
     </>

@@ -18,7 +18,7 @@ export default function Parceiros() {
             <img src={ marol } alt="Logo" className="imagem-parceiros" />
           </a>
           <a href="/#" target="_blank" rel="noopener noreferrer">
-            <img src={ ongfa } alt="Logo" className="imagem-parceiros" style={{ width: '10rem'}}/>
+            <img src={ ongfa } alt="Logo" className="imagem2-parceiros" />
           </a>
         </article>
     </section>
