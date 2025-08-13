@@ -16,7 +16,7 @@ export const enviarFormularioWebsite = async (dados) => {
 
 export const sendContactMessage = async (dados) => {
     try {
-        const response = await axios.post(`${API_URL2}/api/contacto/`, dados);
+        const response = await axios.post(`${API_URL2}/contacto/`, dados);
         console.log(dados)
         return response.data;
     } catch (error) {
