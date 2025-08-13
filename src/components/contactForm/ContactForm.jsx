@@ -4,11 +4,11 @@ import { sendContactMessage } from '../../services/websiteService';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
-    contacto: '',
-    mensagen: ''
+    contacto: "",
+    mensagen: ""
   });
   const [loading, setLoading] = useState(false);
-  const [feedback, setFeedback] = useState('');
+  const [feedback, setFeedback] = useState("");
 
   const handleChange = (e) => {
     setFormData({
@@ -20,7 +20,7 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setFeedback('');
+    setFeedback("");
 
     try {
       await sendContactMessage(formData);

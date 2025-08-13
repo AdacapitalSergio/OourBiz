@@ -14,14 +14,14 @@ export const enviarFormularioWebsite = async (dados) => {
     }
 };
 
-export const sendContactMessage = async (contactData) => {
+export const sendContactMessage = async (dados) => {
     try {
-        const response = await axios.post(`${API_URL2}/solicitar/cotacto/`, contactData);
-        console.log(contactData)
+        const response = await axios.post(`${API_URL2}/api/contacto/`, dados);
+        console.log(dados)
         return response.data;
     } catch (error) {
-        console.log(contactData)
-        console.error("Erro ao enviar o formulário:", error);
+        console.log(dados)
+        console.error("Erro ao enviar o formulário de contacto:", error);
         throw error;
     }
 };

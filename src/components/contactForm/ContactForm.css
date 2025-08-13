@@ -10,12 +10,12 @@
 .contact-form h2 {
     text-align: center;
     margin-bottom: 15px;
-    color: #7c0855;
+    color: #680948;
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 12px;
     border: 1px solid #ccc;
