@@ -5,7 +5,8 @@
     overflow-x: hidden;
     overflow-y: hidden;
     background-color: #f1f1f1;
-    padding-bottom: 2rem;
+    padding-bottom: 0.1rem;
+    padding-top: 2rem;
 }
 
 .h1-quemsoomosconten {
@@ -35,11 +36,11 @@
     background-image: url('../../assets/imagens/QuemSomosContent.jpg');
     background-size: cover;
     background-position: center;
-    height: 30rem;
-    width: 30rem;
+    height: 34rem;
+    width: 34rem;
     border-radius: 50%;
     position: absolute;
-    right: -11rem;
+    right: -8rem;
 }
 
 @media (max-width: 580px) {

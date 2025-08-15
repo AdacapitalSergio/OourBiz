@@ -24,7 +24,6 @@ export default function Home() {
         <QuartaSection />
         <Conheca titulo="Conheça a OurBiz" />
         <PosConheca />
-       
         <EncontreMelhor />
         <ConfieSuaEmpresa />
         <QueFalamSobre />

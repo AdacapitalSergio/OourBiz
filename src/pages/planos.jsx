@@ -6,6 +6,7 @@ import PlanosBanner from "../components/planosBanner/planosBanner";
 import NossosPlanos from "../components/nossosPlanos/nossosPlanos";
 import Conheca2 from "../components/crieseuplanonegocio/conheca";
 import QuartaSection2 from "../components/crieseuplanonegocio/crieseuPlanonegocio";
+import Conheca from "../components/criaSeuSite/conheca";
 
 export default function Planos() {
 
@@ -14,7 +15,7 @@ export default function Planos() {
         <Header />
         <PlanosBanner />
         <NossosPlanos />
-        <Conheca2 />
+        <Conheca titulo="Crie o seu plano de negócio, agora!" />
         <QuartaSection2 />
         <SobreFooter />
         <Footer />

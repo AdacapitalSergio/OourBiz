@@ -16,7 +16,7 @@ const NossosContactos = () => {
             <article className="article-nossoscontactos">
                 <div className='div-nossoscontactos'>
                     <img src={foneIcon} alt="" className='imagem-nossoscontactos' />
-                    <h3 className='h3-nossoscontactos'> +244 900 000 000</h3>
+                    <h3 className='h3-nossoscontactos'> +244 928 003 757</h3>
                 </div>
                 <a href="mailto:comercial@ourbiz.ao">
                     <div className='div-nossoscontactos'>
