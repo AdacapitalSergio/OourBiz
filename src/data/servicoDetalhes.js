@@ -104,7 +104,7 @@ export const servicoDetalhes = [
         icon: icon4,
         titulo: "Marketing e estratégia",
         subt1: "1. Estratégias de Marketing Digital",
-        dessc1: "Planejamento e execução de campanhas online para aumentar a visibilidade e atrair clientes.",
+        dessc1: "Planeamento e execução de campanhas online para aumentar a visibilidade e atrair clientes.",
         beneficios1: "Benefícios:",
         beneficios1li: [
             "Crescimento rápido da marca;",

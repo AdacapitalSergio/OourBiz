@@ -56,7 +56,7 @@ export default function NossosProfissionais() {
       imagem: david,
       nome: "Gil Ivens",
       cargo: "Engenheiro de Sistemas Informáticos",
-      descricao: `Licenciado em Engenharia Informática pelo Instituto Superior Politécnico 
+      descricao: `Formado em Engenharia Informática pelo Instituto Superior Politécnico 
         Independente (ISPI), Gil Ivens integra a OurBiz desde março de 2025. Atua no desenvolvimento e 
         manutenção de plataformas digitais da empresa, com foco em segurança da 
         informação, automação de processos empresariais e integração de sistemas.`,

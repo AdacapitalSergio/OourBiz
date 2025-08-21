@@ -45,9 +45,11 @@ export default function EncontreMelhorServico() {
             </h3>
           </article>
         ))}
-        <article className="articleso-encontre-servico">
-          <h3 className="h3-encontre-servico">Consulte os nossos planos</h3>
-        </article>
+        <Link to="/planos" className="likn-planos">
+          <article className="articleso-encontre-servico">
+            <h3 className="h3-encontre-servico">Consulte os nossos planos</h3>
+          </article>
+        </Link>
       </section>
 
       {servicoSelecionado && (

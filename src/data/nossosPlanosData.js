@@ -48,7 +48,7 @@ export const nossosPlanos = [
             "Tudo do plano Profissional.",
             "Acompanhamento contínuo com mentorias personalizadas.",
             "Consultoria estratégica avançada.",
-            "Planeamento de internacionalização (se aplicável):",
+            "Planeamento de internacionalização (se aplicável).",
             "Suporte prioritário."
         ],
         observacao4: "Empresas consolidadas",
@@ -64,7 +64,7 @@ export const nossosPlanos = [
             "Ideação e estruturação do negócio.",
             "Modelagem de negócios (Canvas).",
             "Estudo de mercado simplificado.",
-            "Guia inicial para formalização",
+            "Grata ponto no guia inicial para formalização.",
             "Suporte semanal (1)."
         ],
         observacao: "Empreendedores individuais iniciando uma startup",
@@ -138,7 +138,7 @@ export const nossosPlanos = [
             "Definição de identidade visual.",
             "Estratégia de branding.",
             "Criação de logotipo.",
-            "Materiais gráficos (1: cartão de visitas, banner, folheto)."
+            "Materiais gráficos (1 cartão de visitas, banner, folheto)."
         ],
         observacao: "Pequenos negócios e startups iniciantes.",
         preco: "19.999,00 Kz",

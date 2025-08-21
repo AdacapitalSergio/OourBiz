@@ -89,7 +89,7 @@
     background-position: center;
     width: 21rem;
     height: auto;
-    padding: 2rem 1rem;
+    padding: 2.8rem 1rem;
     border-radius: 8px;
     color: #fff;
     cursor: default;
@@ -240,6 +240,10 @@
 .link-img {
     width: 1.2rem;
     margin: 0 8px;
+}
+
+.likn-planos {
+    text-decoration: none;
 }
 
 @media (max-width: 580px) {
