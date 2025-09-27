@@ -281,4 +281,19 @@
         font-size: 1.7rem;
     }
 
+    .section-nossosplanos{
+        padding: 2rem 0;
+        display: table;
+        width: auto;
+        
+    }
+
+    .article-nossosplanos {
+        width: 78%;
+        padding: 1.2rem 1rem;
+        margin-left: 7%;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+
 }

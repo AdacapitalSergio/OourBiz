@@ -1,0 +1,111 @@
+.perfil-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-bottom: 20px;
+  color: #7a1745;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 0));
+  gap: 30px;
+  margin-bottom: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 0;
+  background-color: #f1f1f1;
+}
+
+select {
+  padding: 0px 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 109%;
+  height: 39px;
+  margin-top: 2px;
+  background-color: #f1f1f1;
+}
+
+input:focus, select:focus {
+  border-color: #a02a64;
+  outline: none;
+}
+
+.btn-conf {
+  background: #a02a64;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 15px;
+  cursor: pointer;
+  margin-left: 8rem;
+  margin-top: 2rem;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.preferencias {
+  margin-bottom: 15px;
+}
+
+.preferencias p {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.preferencias label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.preferencias {
+  margin-bottom: 20px;
+}
+
+.preferencias p {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #5c0a32;
+}
+
+.radio-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.radio-option input[type="radio"] {
+  margin: 0;
+  cursor: pointer;
+}

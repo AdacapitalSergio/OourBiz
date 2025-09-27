@@ -1,13 +1,20 @@
 import React, { useState, useEffect, useRef } from "react";
 import { econtreArticles } from "../../data/articlesEncontre";
 import "./estiloEncontre.css";
-import { Link } from "react-router-dom";
-import iconV from "../../assets/imagens/iconV.png";
+import { Link, useNavigate } from "react-router-dom";
+
+import ModalDecisor from "../modal/ModalDecisor";
 
 export default function EncontreMelhor() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 670);
   const [activeIndex, setActiveIndex] = useState(0);
   const carouselRef = useRef(null);
+
+  const [planoSelecionado, setPlanoSelecionado] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [servicoSelecionado, setServicoSelecionado] = useState(econtreArticles[0]);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,6 +39,10 @@ export default function EncontreMelhor() {
     },
   ];
 
+  const irParaServico = (servico) => {
+    navigate("/servicos", { state: { servico } });
+  };
+
   return (
     <main className="main-encontre">
       <h1 className="h1-encontre">
@@ -50,12 +61,21 @@ export default function EncontreMelhor() {
                 Que tal pensarmos em grande, juntos?
               </h3>
               <div className="divso-encontre">
-                <Link className="link-encontre">
-                  <button className="button2-encontre">Comprar agora</button>
+                <button
+                  onClick={() => {
+                    setPlanoSelecionado(item);
+                    setIsModalOpen(true);
+                  }}
+                  className="button2-encontre"
+                >
+                  Comprar agora
+                </button>
+                <Link className="link-encontreservico" to={`/servicos`}>
+                  <button className="button2-encontre">
+                    {servicoSelecionado.textBotao2}
+                  </button>
                 </Link>
-                <Link className="link-encontre" to="/servicos">
-                  <button className="button2-encontre">Saber mais</button>
-                </Link>
+
               </div>
             </article>
           ) : (
@@ -63,30 +83,23 @@ export default function EncontreMelhor() {
               <img src={item.icon} alt="" className="icon-encontre" />
               <h3 className="h3-encontre">{item.titulo}</h3>
               <ul className="ul-encontre">
-                <li className="li-encontre">
-                  
-                  {item.li1}
-                </li>
-                <li className="li-encontre">
-                  
-                  {item.li2}
-                </li>
-                <li className="li-encontre">
-                  
-                  {item.li3}
-                </li>
-                <li className="li-encontre">
-                  {/*<img src={iconV} />*/}
-                  {item.li4}
-                </li>
+                <li className="li-encontre">{item.li1}</li>
+                <li className="li-encontre">{item.li2}</li>
+                <li className="li-encontre">{item.li3}</li>
+                <li className="li-encontre">{item.li4}</li>
               </ul>
               <div className="div-encontre">
-                <Link className="link-encontre">
-                  <button className="button1-encontre">
-                    {item.textBotao1}
-                  </button>
-                </Link>
-                <Link className="link-encontre" to="/servicos">
+                <button
+                  onClick={() => {
+                    setPlanoSelecionado(item);
+                    setIsModalOpen(true);
+                  }}
+                  className="button1-encontre"
+                >
+                  {item.textBotao1}
+                </button>
+
+                <Link className="link-encontreservico" to={`/servicos/${item.id}`}>
                   <button className="button2-encontre">
                     {item.textBotao2}
                   </button>
@@ -109,6 +122,14 @@ export default function EncontreMelhor() {
           ))}
         </div>
       )}
+      <ModalDecisor
+        isOpen={isModalOpen}
+        onClose={() => {
+          setIsModalOpen(false);
+          setPlanoSelecionado(null);
+        }}
+        planoSelecionado={planoSelecionado}
+      />
     </main>
   );
 }

@@ -8,6 +8,8 @@ import Contactar from '../pages/contactar';
 import Cadastrar from '../pages/cadastrar';
 import Login from '../pages/login';
 import CriarSite from '../pages/criarSite';
+import DashboardCliente from '../pages/dashboardCliente';
+import PerfilCliente from '../pages/perfilCliente';
 
 function Rotas() {
 
@@ -23,6 +25,11 @@ function Rotas() {
           <Route path='/login' element={ <Login /> } />
           <Route path='/cadastrar' element={ <Cadastrar /> } />
           <Route path='/criarsite' element={ <CriarSite /> } />
+          <Route path="/planos/:servicoId" element={<Planos />} />
+          <Route path="/servicos/:servicoId" element={<Servicos />} />
+
+          <Route path='/dashboard-cliente' element={ <DashboardCliente /> } />
+          <Route path='/perfil-cliente' element={ <PerfilCliente /> } />
         </Routes>
       </BrowserRouter>
     </>

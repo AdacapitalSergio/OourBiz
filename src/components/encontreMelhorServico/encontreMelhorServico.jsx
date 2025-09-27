@@ -1,13 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./estiloEncontreServico.css";
 import iconV from "../../assets/imagens/iconverde.png";
 import setaL from "../../assets/imagens/setaVoltar.png";
 import setaR from "../../assets/imagens/setaDt.png";
 import { servicoDetalhes } from "../../data/servicoDetalhes.js";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export default function EncontreMelhorServico() {
   const [servicoSelecionado, setServicoSelecionado] = useState(servicoDetalhes[0]);
+  
+  const { servicoId } = useParams();
+
+  useEffect(() => {
+    if (servicoId) {
+      const servico = servicoDetalhes.find((s) => s.id === parseInt(servicoId));
+      if (servico) {
+        setServicoSelecionado(servico);
+      }
+    }
+  }, [servicoId]);
+
 
   const currentIndex = servicoDetalhes.findIndex(
     (s) => s.id === servicoSelecionado.id
@@ -41,11 +53,11 @@ export default function EncontreMelhorServico() {
             onClick={() => setServicoSelecionado(item)}
           >
             <h3 className="h3-encontre-servico">
-              <img src={item.icon} className="icon-detalhes" /> {item.titulo}
+              <img src={item.icon} className="icon-detalhes" alt="" /> {item.titulo}
             </h3>
           </article>
         ))}
-        <Link to="/planos" className="likn-planos">
+        <Link to="/planos" className="likn-servicoss">
           <article className="articleso-encontre-servico">
             <h3 className="h3-encontre-servico">Consulte os nossos planos</h3>
           </article>
@@ -55,9 +67,7 @@ export default function EncontreMelhorServico() {
       {servicoSelecionado && (
         <section className="detalhes-servico">
           <div className="linha"></div>
-          <h3 className="h32-encontre-servico">
-            {servicoSelecionado.titulo}
-          </h3>
+          <h3 className="h32-encontre-servico">{servicoSelecionado.titulo}</h3>
           <img
             src={servicoSelecionado.imagem}
             alt="Imagem"
@@ -71,7 +81,7 @@ export default function EncontreMelhorServico() {
               <ul>
                 {servicoSelecionado.beneficios1li?.map((beneficio, idx) => (
                   <li key={idx}>
-                    <img src={iconV} /> {beneficio}
+                    <img src={iconV} alt="" /> {beneficio}
                   </li>
                 ))}
               </ul>
@@ -85,7 +95,7 @@ export default function EncontreMelhorServico() {
                 <ul>
                   {servicoSelecionado.beneficios2li?.map((beneficio, idx) => (
                     <li key={idx}>
-                      <img src={iconV} /> {beneficio}
+                      <img src={iconV} alt="" /> {beneficio}
                     </li>
                   ))}
                 </ul>
@@ -100,7 +110,7 @@ export default function EncontreMelhorServico() {
                 <ul>
                   {servicoSelecionado.beneficios3li?.map((beneficio, idx) => (
                     <li key={idx}>
-                      <img src={iconV} /> {beneficio}
+                      <img src={iconV} alt="" /> {beneficio}
                     </li>
                   ))}
                 </ul>
@@ -109,7 +119,8 @@ export default function EncontreMelhorServico() {
           </div>
 
           <div className="divso-encontreservico">
-            <Link className="link-encontreservico" to={"/planos"}>
+            {/* Passa o id do serviço na rota */}
+            <Link className="link-encontreservico" to={`/planos/${servicoSelecionado.id}`}>
               <button className="button2-encontreservico">
                 {servicoSelecionado.textBotao1}
               </button>
@@ -150,4 +161,3 @@ export default function EncontreMelhorServico() {
     </main>
   );
 }
-

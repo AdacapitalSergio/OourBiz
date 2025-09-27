@@ -82,6 +82,11 @@
     display: none;
 }
 
+.likn-servicoss {
+    text-decoration: none;
+    width: 21rem;
+    height: auto;
+}
 .articleso-encontre-servico {
     background-image: url(../../assets/imagens/Home_pageserviço7.jpg);
     background-size: cover;
@@ -294,9 +299,15 @@
         border-radius: 4px;
     }
 
+    .likn-servicoss {
+        text-decoration: none;
+        width: 100%;
+        margin-left: 0%;
+    }
+
     .articleso-encontre-servico {
         width: 78%;
-        padding: 2rem 1rem;
+        padding: 1.2rem 1rem;
         margin-left: 7%;
     }
 

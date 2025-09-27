@@ -118,7 +118,7 @@ export const servicoDetalhes = [
     {
         id: 5,
         icon: icon5,
-        titulo: "Apoio à captação de recursos",
+        titulo: "Apoio e captação de recursos",
         subt1: "1. Preparação para Pitch",
         dessc1: "Treinamento para apresentações de impacto a investidores, incluindo criação de pitch decks e estratégias de persuasão.",
         beneficios1: "Benefícios:",

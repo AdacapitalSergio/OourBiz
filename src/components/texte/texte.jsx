@@ -1,108 +1,37 @@
-import React from "react";
-import "./FormularioWebsite.css";
+//No componente de serviços (ex: ServicoCard.jsx)
+import React, { useContext, useState } from "react";
+import { AuthContext } from "../../context/AuthContext";
+import Modal from "../modal/Modal";
 
-export default function Texte() {
+export default function ServicoCard({ servico }) {
+  const { user } = useContext(AuthContext);
+  const [modal, setModal] = useState({ open: false, message: "" });
+
+  const handleCompra = () => {
+    if (user) {
+      // 🔥 Usuário logado → prosseguir com compra
+      console.log("Comprar serviço:", servico);
+      setModal({ open: true, message: "Serviço comprado com sucesso!" });
+    } else {
+      // ⚠️ Usuário não logado → pedir login
+      setModal({ open: true, message: "Você precisa fazer login para continuar." });
+    }
+  };
+
   return (
-    <div className="container">
-      <div className="form-box">
-        <h2 className="form-title">
-          Formulário de solicitação de Criação de Website
-        </h2>
-        <p className="form-desc">
-          Preencha este formulário com suas informações e entraremos em contato
-          com uma proposta personalizada. É simples, rápido e profissional.
-        </p>
+    <div className="servico-card">
+      <h3>{servico.nome}</h3>
+      <p>{servico.descricao}</p>
+      <button onClick={handleCompra} className="btn-comprar">Comprar</button>
 
-        <form>
-          <div className="form-group">
-            <label>
-              1. Nome completo ou nome da empresa <span className="required">*</span>
-            </label>
-            <input type="text" />
-          </div>
-
-          <div className="form-group">
-            <label>
-              2. Email para contato <span className="required">*</span>
-            </label>
-            <input type="email" />
-          </div>
-
-          <div className="form-group">
-            <label>
-              3. Telefone / WhatsApp <span className="required">*</span>
-            </label>
-            <input type="text" />
-          </div>
-
-          <div className="form-group">
-            <label>
-              4. Qual o objetivo principal do site? <span className="required">*</span>
-            </label>
-            <div className="check-options">
-              <label><input type="checkbox" /> Vender produtos ou serviços</label>
-              <label><input type="checkbox" /> Apresentar portfólio ou currículo</label>
-              <label><input type="checkbox" /> Blog ou notícias</label>
-              <label><input type="checkbox" /> Outro</label>
-            </div>
-            <input type="text" placeholder="Especifique" />
-          </div>
-
-          <div className="form-group">
-            <label>5. Você já tem domínio (ex: www.seusite.com)?</label>
-            <div className="check-options">
-              <label><input type="radio" name="dominio" /> Sim</label>
-              <label><input type="radio" name="dominio" /> Não</label>
-            </div>
-            <input type="text" placeholder="Qual?" />
-          </div>
-
-          <div className="form-group">
-            <label>
-              6. Existe algum logótipo ou identidade visual da sua marca ou empresa?
-            </label>
-            <div className="check-options">
-              <label><input type="radio" name="logo" /> Sim, já possuo</label>
-              <label><input type="radio" name="logo" /> Não possuo ainda</label>
-            </div>
-          </div>
-
-          <div className="form-group">
-            <label>
-              7. Quais áreas ou funcionalidades você deseja (ex: galeria, blog, reservas)?
-            </label>
-            <input type="text" />
-          </div>
-
-          <div className="form-group">
-            <label>
-              8. Deseja integração do site (Ex: WhatsApp, ChatBot, Instagram, etc)?
-            </label>
-            <input type="text" />
-          </div>
-
-          <div className="form-group">
-            <label>
-              9. Tem algum site que você gosta e gostaria de usar como referência?
-            </label>
-            <input type="text" />
-          </div>
-
-          <div className="form-group">
-            <label>10. Deseja receber o projeto até:</label>
-            <input type="text" />
-          </div>
-
-          <div className="form-group">
-            <label>11. Comentários adicionais (opcional)</label>
-            <textarea></textarea>
-          </div>
-
-          <div className="form-group">
-            <button type="submit" className="submit-btn">Enviar</button>
-          </div>
-        </form>
-      </div>
+      {/* Modal */}
+      {modal.open && (
+        <Modal
+          message={modal.message}
+          onClose={() => setModal({ ...modal, open: false })}
+          type={user ? "success" : "error"}
+        />
+      )}
     </div>
   );
 }

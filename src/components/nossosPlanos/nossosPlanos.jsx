@@ -1,134 +1,29 @@
-/*import React, { useState } from "react";
-import "./estiloNossosPlanos.css";
-import iconV from "../../assets/imagens/iconverde.png";
-import { nossosPlanos } from "../../data/nossosPlanosData.js";
-import { Link } from "react-router-dom";
-
-export default function NossosPlanos() {
-  const [servicoSelecionado, setServicoSelecionado] = useState(nossosPlanos[0]);
-
-  return (
-    <main className="main-nossosplanos">
-      <h1 className="h1-nossosplanos">
-        Nossos planos
-      </h1>
-
-      <section className="section-nossosplanos">
-        {nossosPlanos.map((item) => (
-          <article
-            key={item.id}
-            className={`article-nossosplanos ${
-              servicoSelecionado?.id === item.id ? "bgc-branco-nossosplanos" : ""
-            }`}
-            onClick={() => setServicoSelecionado(item)}
-          >
-            <h3 className="h3-nossosplanos"><div className="div-pontinho"></div><p>{item.titulo}</p></h3>
-          </article>
-        ))}
-      </section>
-
-      {servicoSelecionado && (
-        <section
-          className="detalhes-nossosplanos"
-          style={{ backgroundImage: `url(${servicoSelecionado.imagem})` }}
-        >
-          <div className="overlay-nossosplanos">
-          <h3 className="h32-nossosplanos">{servicoSelecionado.titulo}</h3>
-            <div className="cards-sub-nossosplanos animate-nossosplanos">
-              <div className="card-nossosplanos">
-                <h2>{servicoSelecionado.nomePlano}</h2>
-                <div className="div-linha-nossosplanos"></div>
-                <ul>
-                  {servicoSelecionado.beneficiosli?.map((beneficio, idx) => (
-                    <li key={idx}><img src={iconV} /> {beneficio}</li>
-                  ))}
-                </ul>
-                <div className="div-linha-nossosplanos"></div>
-                <p>{servicoSelecionado.observacao}</p>
-                <div className="div-linha-nossosplanos"></div>
-                <p>{servicoSelecionado.preco}</p>
-                <div className="divso-nossosplanos">
-                  <button className="button2-nossosplanos">Comprar</button>
-                </div>
-              </div>
-
-              {servicoSelecionado.nomePlano2 && (
-                <div className="card-nossosplanos">
-                  <h2>{servicoSelecionado.nomePlano2}</h2>
-                  <div className="div-linha-nossosplanos"></div>
-                  <ul>
-                    {servicoSelecionado.beneficiosli2?.map((beneficio, idx) => (
-                      <li key={idx}><img src={iconV} /> {beneficio}</li>
-                    ))}
-                  </ul>
-                  <div className="div-linha-nossosplanos"></div>
-                  <p>{servicoSelecionado.observacao2}</p>
-                  <div className="div-linha-nossosplanos"></div>
-                  <p>{servicoSelecionado.preco2}</p>
-                  <div className="divso-nossosplanos">
-                    <button className="button2-nossosplanos">Comprar</button>
-                  </div>
-                </div>
-              )}
-
-              {servicoSelecionado.nomePlano3 && (
-                <div className="card-nossosplanos">
-                  <h2>{servicoSelecionado.nomePlano3}</h2>
-                  <div className="div-linha-nossosplanos"></div>
-                  <ul>
-                    {servicoSelecionado.beneficiosli3?.map((beneficio, idx) => (
-                      <li key={idx}><img src={iconV} /> {beneficio}</li>
-                    ))}
-                  </ul>
-                  <div className="div-linha-nossosplanos"></div>
-                  <p>{servicoSelecionado.observacao3}</p>
-                  <div className="div-linha-nossosplanos"></div>
-                  <p>{servicoSelecionado.preco3}</p>
-                  <div className="divso-nossosplanos">
-                    <button className="button2-nossosplanos">Comprar</button>
-                  </div>
-                </div>
-              )}
-
-              {servicoSelecionado.nomePlano4 && (
-                <div className="card-nossosplanos">
-                  <h2>{servicoSelecionado.nomePlano4}</h2>
-                  <div className="div-linha-nossosplanos"></div>
-                  <ul>
-                    {servicoSelecionado.beneficiosli4?.map((beneficio, idx) => (
-                      <li key={idx}><img src={iconV} /> {beneficio}</li>
-                    ))}
-                  </ul>
-                  <div className="div-linha-nossosplanos"></div>
-                  <p>{servicoSelecionado.observacao4}</p>
-                  <div className="div-linha-nossosplanos"></div>
-                  <p>{servicoSelecionado.preco4}</p>
-                  <div className="divso-nossosplanos">
-                    <button className="button2-nossosplanos">Comprar</button>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </section>
-      )}
-    </main>
-  );
-}
-*/
-
 import React, { useState, useRef, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import "./estiloNossosPlanos.css";
 import iconV from "../../assets/imagens/iconverde.png";
 import { nossosPlanos } from "../../data/nossosPlanosData.js";
+import ModalDecisor from "../modal/ModalDecisor";
 
 export default function NossosPlanos() {
+  const { servicoId } = useParams();
   const [servicoSelecionado, setServicoSelecionado] = useState(nossosPlanos[0]);
   const [isMobile, setIsMobile] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const carouselRef = useRef(null);
 
-  // Detecta se é mobile
+  const [planoSelecionado, setPlanoSelecionado] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    if (servicoId) {
+      const servico = nossosPlanos.find((s) => s.id === parseInt(servicoId));
+      if (servico) {
+        setServicoSelecionado(servico);
+      }
+    }
+  }, [servicoId]);
+
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 670);
@@ -138,7 +33,6 @@ export default function NossosPlanos() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Atualiza índice do slide ativo
   const handleScroll = () => {
     if (!carouselRef.current) return;
     const { scrollLeft, clientWidth } = carouselRef.current;
@@ -146,7 +40,6 @@ export default function NossosPlanos() {
     setActiveIndex(index);
   };
 
-  // Cria array de planos disponíveis
   const planos = [];
   if (servicoSelecionado.nomePlano)
     planos.push({
@@ -233,7 +126,15 @@ export default function NossosPlanos() {
                   <div className="div-linha-nossosplanos"></div>
                   <p className="p-preco">{plano.preco}</p>
                   <div className="divso-nossosplanos">
-                    <button className="button2-nossosplanos">Comprar</button>
+                    <button
+                      onClick={() => {
+                        setPlanoSelecionado(plano);
+                        setIsModalOpen(true);
+                      }}
+                      className="button2-nossosplanos"
+                    >
+                      Comprar
+                    </button>
                   </div>
                 </div>
               ))}
@@ -254,6 +155,15 @@ export default function NossosPlanos() {
           </div>
         </section>
       )}
+
+      <ModalDecisor
+        isOpen={isModalOpen}
+        onClose={() => {
+          setIsModalOpen(false);
+          setPlanoSelecionado(null);
+        }}
+        planoSelecionado={planoSelecionado}
+      />
     </main>
   );
 }
