@@ -7,6 +7,7 @@ import QuemSomosContent from "../components/quemSomoscontent/quemSomoscontent";
 import MissaoVisao from "../components/missaoVisao/missaoVisao";
 import NossosProfissionais from "../components/nossosProfissionais/nossosProfissionais";
 import Parceiros from "../components/parceiros/parceiros";
+import WhatsappPulse from "../components/whatsApp/WhatsappPulse";
 
 export default function QuemSomos() {
 
@@ -20,6 +21,7 @@ export default function QuemSomos() {
         <Parceiros />
         <SobreFooter />
         <Footer />
+        <WhatsappPulse />
     </>
   );
 }

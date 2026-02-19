@@ -7,6 +7,7 @@ import NossosPlanos from "../components/nossosPlanos/nossosPlanos";
 import Conheca2 from "../components/crieseuplanonegocio/conheca";
 import QuartaSection2 from "../components/crieseuplanonegocio/crieseuPlanonegocio";
 import Conheca from "../components/criaSeuSite/conheca";
+import WhatsappPulse from "../components/whatsApp/WhatsappPulse";
 
 export default function Planos() {
 
@@ -19,6 +20,7 @@ export default function Planos() {
         <QuartaSection2 />
         <SobreFooter />
         <Footer />
+        <WhatsappPulse />
     </>
   );
 }

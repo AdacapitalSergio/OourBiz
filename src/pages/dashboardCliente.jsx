@@ -6,6 +6,7 @@ import Header from "../components/header/header";
 import MenuCliente from "../components/dashBoardCliente/menuCliente/menuCliente";
 import Dashboard from "../components/dashBoardCliente/dashoard/Dashboard";
 import MeuPerfil from "../components/dashBoardCliente/meuPerfil/meuperfil";
+import WhatsappPulse from "../components/whatsApp/WhatsappPulse";
 
 
 export default function DashboardCliente() {
@@ -18,6 +19,7 @@ export default function DashboardCliente() {
         <Dashboard />
         <SobreFooter />
         <Footer />
+        <WhatsappPulse />
     </>
   );
 }

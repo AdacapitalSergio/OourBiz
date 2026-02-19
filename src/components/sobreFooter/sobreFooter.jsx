@@ -19,6 +19,11 @@ export default function SobreFooter() {
             Junto a Polícia de Intervenção Rápida
         </p>
         <a href="#" className="a1-sobrefooter">Acesse o nosso blog</a>
+        <div className="div-contactos">
+            <h3>Suporte</h3>
+            <p>928 003 757</p>
+            <p>Ligação local</p>
+        </div>
         <ul className="ul-icon">
             <li>
                 <a href="/#" target="_blank" rel="noopener noreferrer">
@@ -55,11 +60,11 @@ export default function SobreFooter() {
       <aside className="aside-sobrefooter">
         <h3 className="h3-sobrefooter">Nossos serviços</h3>
         <ul className="ul1-servicos">
-            <li><p></p><a href="/#">Consultoria para MPMEs</a></li>
-            <li><a href="/#">Consultoria para Startups</a></li>
-            <li><a href="/#">Eventos e formação</a></li>
-            <li><a href="/#">Marketing e estratégia</a></li>
-            <li><a href="/">Apoio e captação de recursos</a></li>   
+            <li><p></p><a href="/servicos/1">Consultoria para MPMEs</a></li>
+            <li><a href="/servicos/2">Consultoria para Startups</a></li>
+            <li><a href="/servicos/3">Eventos e formação</a></li>
+            <li><a href="/servicos/4">Marketing e estratégia</a></li>
+            <li><a href="/servicos/5">Apoio e captação de recursos</a></li>   
         </ul>
 
         <ul className="ul2-servicos">

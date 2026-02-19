@@ -4,7 +4,7 @@ const API_URL2 = "https://api.v1.ourbiz.ao/api"
 
 export const enviarFormularioWebsite = async (dados) => {
     try {
-        const response = await axios.post(`${API_URL2}/solicitar/`, dados);
+        const response = await axios.post(`${API_URL2}/solicitar/website/`, dados);
         console.log(dados)
         return response.data;
     } catch (error) {
@@ -71,4 +71,8 @@ export const register = async ({ nome_completo, email, telefone, senha }) => {
     }
     throw new Error("Erro ao conectar com o servidor.");
   }
+};
+
+export const enviarContacto = async (dados) => {
+  return api.post(`${API_URL2}/contactos/`, dados);
 };

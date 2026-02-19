@@ -13,6 +13,7 @@ import QueFalamSobre from "../components/queFalamSobre/queFalamSobre";
 import CrieSeuNegocio from "../components/crieSeuNegocio/crieSeuNegocio";
 import Perguntas from "../components/perguntas/perguntas";
 import ArtigosRecentes from "../components/artigosRecentes/artigosRecentes";
+import WhatsappPulse from "../components/whatsApp/WhatsappPulse";
 
 export default function Home() {
 
@@ -33,6 +34,7 @@ export default function Home() {
         <Perguntas />
         <SobreFooter />
         <Footer />
+        <WhatsappPulse />
     </>
   );
 }

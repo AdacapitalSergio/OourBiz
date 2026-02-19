@@ -6,6 +6,7 @@ import ServicoBanner from "../components/servicosBanner/servicosBanner";
 import EncontreMelhorServico from "../components/encontreMelhorServico/encontreMelhorServico";
 import QuartaSection from "../components/quartaSection/quartaSection";
 import CriaSeuSite from "../components/criaSeuSite/criaSeuSite";
+import WhatsappPulse from "../components/whatsApp/WhatsappPulse";
 
 export default function Servicos() {
 
@@ -17,6 +18,7 @@ export default function Servicos() {
         <QuartaSection />
         <SobreFooter />
         <Footer />
+        <WhatsappPulse />
     </>
   );
 }

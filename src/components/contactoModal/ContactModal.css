@@ -1,0 +1,84 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999999;
+}
+
+.modal-container {
+  background: #fff;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 18px;
+  padding: 30px;
+  position: relative;
+  animation: fadeUp 0.3s ease;
+  z-index: 999999;
+}
+
+.modal-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #5b0034;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.grid input,
+.grid select {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.contacto-pref {
+  background: #fde8f2;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.contacto-pref label {
+  margin-right: 20px;
+}
+
+.info {
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+}
+
+.btn-enviar {
+  width: 220px;
+  margin: 20px auto 0;
+  display: block;
+  background: linear-gradient(135deg, #ff007a, #ff4da6);
+  color: #fff;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@keyframes fadeUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

@@ -5,9 +5,11 @@ import setaL from "../../assets/imagens/setaVoltar.png";
 import setaR from "../../assets/imagens/setaDt.png";
 import { servicoDetalhes } from "../../data/servicoDetalhes.js";
 import { Link, useParams } from "react-router-dom";
+import ContactModal from "../contactoModal/ContactModal.jsx";
 
 export default function EncontreMelhorServico() {
   const [servicoSelecionado, setServicoSelecionado] = useState(servicoDetalhes[0]);
+  const [openModal, setOpenModal] = useState(false);
   
   const { servicoId } = useParams();
 
@@ -125,13 +127,22 @@ export default function EncontreMelhorServico() {
                 {servicoSelecionado.textBotao1}
               </button>
             </Link>
-            <Link className="link-encontreservico" to={"/contactar"}>
-              <button className="button2-encontreservico">
+            <Link className="link-encontreservico">
+              <button
+              className="button2-encontreservico"
+              onClick={() => setOpenModal(true)}
+              >
                 {servicoSelecionado.textBotao2}
               </button>
             </Link>
           </div>
           <div className="linha"></div>
+
+          <ContactModal
+            isOpen={openModal}
+            onClose={() => setOpenModal(false)}
+            servico={servicoSelecionado}
+          />
 
           <div className="div-links">
             {currentIndex > 0 && (

@@ -5,6 +5,7 @@ import Footer from "../components/footer/footer";
 import ContactarBanner from "../components/contactarBanner/contactarBanner";
 import NossosContactos from "../components/nossosContactos/nossosContactos";
 import ContactForm from "../components/contactForm/ContactForm";
+import WhatsappPulse from "../components/whatsApp/WhatsappPulse";
 
 export default function Contactar() {
 
@@ -16,6 +17,7 @@ export default function Contactar() {
         <ContactForm />
         <SobreFooter />
         <Footer />
+        <WhatsappPulse />
     </>
   );
 }

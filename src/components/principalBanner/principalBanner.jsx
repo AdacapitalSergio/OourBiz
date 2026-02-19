@@ -11,7 +11,7 @@ const PrincipalBanner = () => {
             <article className="conteiner-content">
                 <h1 className="h1-principal">Transforme o seu negócio</h1>
                 <p className="p-principal">O mercado está em constante movimento. 
-                    Mas e você? Está acompanhando as transformações? A Ourbiz oferece 
+                    Mas e você? Está acompanhando as transformações? A OurBiz oferece 
                     soluções inteligentes e inovadoras em consultoria de gestão empresarial 
                     para desenvolver o potencial do seu negócio.
                 </p>
