@@ -4,6 +4,8 @@ import "./estiloEncontre.css";
 import { Link, useNavigate } from "react-router-dom";
 
 import ModalDecisor from "../modal/ModalDecisor";
+import ModalSolicitarServico from "../ModalSolicitarServico/ModalSolicitarServico";
+import { Toaster } from "sonner";
 
 export default function EncontreMelhor() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 670);
@@ -11,7 +13,8 @@ export default function EncontreMelhor() {
   const carouselRef = useRef(null);
 
   const [planoSelecionado, setPlanoSelecionado] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  //const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
   const [servicoSelecionado, setServicoSelecionado] = useState(econtreArticles[0]);
 
   const navigate = useNavigate();
@@ -45,6 +48,8 @@ export default function EncontreMelhor() {
 
   return (
     <main className="main-encontre">
+      <Toaster richColors position="top-right" />
+
       <h1 className="h1-encontre">
         Encontre a melhor consultoria para o seu negócio.
       </h1>
@@ -63,8 +68,10 @@ export default function EncontreMelhor() {
               <div className="divso-encontre">
                 <button
                   onClick={() => {
-                    setPlanoSelecionado(item);
-                    setIsModalOpen(true);
+                    //setPlanoSelecionado(item);
+                    //setIsModalOpen(true);
+                    setModalOpen(true);
+                    
                   }}
                   className="button2-encontre"
                 >
@@ -89,10 +96,19 @@ export default function EncontreMelhor() {
                 <li className="li-encontre">{item.li4}</li>
               </ul>
               <div className="div-encontre">
-                <button
+                {/*<button
                   onClick={() => {
                     setPlanoSelecionado(item);
                     setIsModalOpen(true);
+                  }}
+                  className="button1-encontre"
+                >
+                  {item.textBotao1}
+                </button> */}
+
+                <button
+                  onClick={() => {
+                    setModalOpen(true);
                   }}
                   className="button1-encontre"
                 >
@@ -122,13 +138,17 @@ export default function EncontreMelhor() {
           ))}
         </div>
       )}
-      <ModalDecisor
+      {/*<ModalDecisor
         isOpen={isModalOpen}
         onClose={() => {
           setIsModalOpen(false);
           setPlanoSelecionado(null);
         }}
         planoSelecionado={planoSelecionado}
+      /> */}
+      <ModalSolicitarServico
+        open={modalOpen}
+        onClose={() => setModalOpen(false)}
       />
     </main>
   );

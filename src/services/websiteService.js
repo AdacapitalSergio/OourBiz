@@ -76,3 +76,15 @@ export const register = async ({ nome_completo, email, telefone, senha }) => {
 export const enviarContacto = async (dados) => {
   return api.post(`${API_URL2}/contactos/`, dados);
 };
+
+export const enviarFormulario = async (dados) => {
+    try {
+        const response = await axios.post(`${API_URL2}/solicitar/servico/`, dados);
+        console.log(dados)
+        return response.data;
+    } catch (error) {
+        console.log(dados)
+        console.error("Erro ao enviar o formulário:", error);
+        throw error;
+    }
+};

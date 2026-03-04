@@ -7,9 +7,13 @@ import { servicoDetalhes } from "../../data/servicoDetalhes.js";
 import { Link, useParams } from "react-router-dom";
 import ContactModal from "../contactoModal/ContactModal.jsx";
 
+import ModalSolicitarServico from "../ModalSolicitarServico/ModalSolicitarServico";
+import { Toaster } from "sonner";
+
 export default function EncontreMelhorServico() {
   const [servicoSelecionado, setServicoSelecionado] = useState(servicoDetalhes[0]);
   const [openModal, setOpenModal] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
   
   const { servicoId } = useParams();
 
@@ -41,6 +45,7 @@ export default function EncontreMelhorServico() {
 
   return (
     <main className="main-encontre-servico">
+      <Toaster richColors position="top-right" />
       <h1 className="h1-encontre-servico">
         Encontre a melhor consultoria para o seu negócio.
       </h1>
@@ -130,7 +135,7 @@ export default function EncontreMelhorServico() {
             <Link className="link-encontreservico">
               <button
               className="button2-encontreservico"
-              onClick={() => setOpenModal(true)}
+              onClick={() => setModalOpen(true)}
               >
                 {servicoSelecionado.textBotao2}
               </button>
@@ -138,11 +143,6 @@ export default function EncontreMelhorServico() {
           </div>
           <div className="linha"></div>
 
-          <ContactModal
-            isOpen={openModal}
-            onClose={() => setOpenModal(false)}
-            servico={servicoSelecionado}
-          />
 
           <div className="div-links">
             {currentIndex > 0 && (
@@ -169,6 +169,10 @@ export default function EncontreMelhorServico() {
           </div>
         </section>
       )}
+      <ModalSolicitarServico
+        open={modalOpen}
+        onClose={() => setModalOpen(false)}
+      />
     </main>
   );
 }

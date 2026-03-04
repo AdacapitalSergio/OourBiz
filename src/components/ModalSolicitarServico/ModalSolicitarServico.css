@@ -1,0 +1,124 @@
+.modal-overlay2 {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  height: 100vh;
+}
+
+.modal-container {
+  background: #fff;
+  border-radius: 20px;
+  max-width: 1000px;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+}
+
+.modal-closem {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: #f1f1f1;
+  border: solid 1px;
+  border-radius: 50%;
+  padding:4px 8px;
+  cursor: pointer;
+}
+
+.modal-content {
+  padding: 40px;
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 24px;
+  color: #a0005a;
+  margin-bottom: 30px;
+}
+
+.modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 10px;
+}
+
+.modal-column input {
+  width: 90%;
+  background: #e1e1e1;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.modal-column select {
+  width: 96%;
+  background: #e1e1e1;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 2px 12px;
+  margin-bottom: 10px;
+}
+
+.contact-box {
+  background: #f195c2;
+  padding: 20px;
+  border-radius: 16px;
+  justify-items: center;
+}
+
+.radio-group {
+  display: flex;
+  gap: 30px;
+  margin: 8px 0;
+}
+
+.contact-note {
+  font-size: 12px;
+  border-top: 1px solid #8d1055;
+  padding-top: 10px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.btn-enviar {
+  background: linear-gradient(90deg, #ff008c, #e6007e);
+  color: #fff;
+  border-radius: 16px;
+  padding: 12px 30px;
+  box-shadow: 0 10px 25px rgba(230, 0, 126, 0.3);
+}
+
+@media (max-width: 768px) {
+  .modal-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0 10px;
+  }
+  .modal-container {
+    width: 95%;
+  }
+
+  .modal-title {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .modal-overlay {
+    padding: 15px;
+    height: 100vh;
+    width: 100%;
+  }
+
+  modal-column select {
+    width: 98%;
+  }
+}

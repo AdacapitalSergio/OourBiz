@@ -41,7 +41,7 @@ export const servicoDetalhes = [
         ],
         imagem: fundoMpmes,
         textBotao1: "Consultar planos",
-        textBotao2:"Contactar"
+        textBotao2:"Solicitar servico"
     },
     {
         id: 2,
@@ -73,7 +73,7 @@ export const servicoDetalhes = [
         ],
         imagem: fundoStartups,
         textBotao1: "Consultar planos",
-        textBotao2:"Contactar"
+        textBotao2:"Solicitar servico"
     },
     {
         id: 3,
@@ -97,7 +97,7 @@ export const servicoDetalhes = [
         ],
         imagem: fundoEventos,
         textBotao1: "Consultar planos",
-        textBotao2:"Contactar"
+        textBotao2:"Solicitar servico"
     },
     {
         id: 4,
@@ -113,7 +113,7 @@ export const servicoDetalhes = [
         ],
         imagem: fundoMarketing,
         textBotao1: "Consultar planos",
-        textBotao2:"Contactar"
+        textBotao2:"Solicitar servico"
     },
     {
         id: 5,
@@ -137,7 +137,15 @@ export const servicoDetalhes = [
         ],
         imagem: fundoRecursos,
         textBotao1: "Consultar planos",
-        textBotao2:"Contactar"
+        textBotao2:"Solicitar servico"
     },
 
+]
+
+export const servicos = [
+    {value:"Consultoria para MPMEs"},    
+    {value:"Consultoria para Startups"},
+    {value:"Eventos e Formação"},
+    {value:"Marketing e estratégia"},
+    {value:"Apoio e captação de recursos"}
 ]
