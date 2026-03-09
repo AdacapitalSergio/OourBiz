@@ -128,7 +128,7 @@ export const nossosPlanos = [
         observacao3: "Empreendedores inovadores.",
         preco3: "29.999,00 Kz",
         linkBtn3: "/",
-    },
+    },/*
     {
         id: 4,
         imagem: fundoMarketing,
@@ -200,5 +200,5 @@ export const nossosPlanos = [
         observacao3: "Startups escaláveis e empresas em fase de crescimento.",
         preco3: "79.999,00 Kz",
         linkBtn3: "/", 
-    },
+    },*/
 ]

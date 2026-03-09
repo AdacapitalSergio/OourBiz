@@ -33,7 +33,7 @@ export default function ModalLogin({ isOpen, onClose }) {
     return (
         <div className="modal-overlay">
             <div className="modal-login">
-                <button className="modal-closem" onClick={onClose}>×</button>
+                <button className="modal-closemm" onClick={onClose}>×</button>
                 <hr style={{ marginTop: '1.5rem'}} />
                 <h2 className="modal-title">Fazer login</h2>
 

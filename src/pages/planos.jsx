@@ -8,6 +8,7 @@ import Conheca2 from "../components/crieseuplanonegocio/conheca";
 import QuartaSection2 from "../components/crieseuplanonegocio/crieseuPlanonegocio";
 import Conheca from "../components/criaSeuSite/conheca";
 import WhatsappPulse from "../components/whatsApp/WhatsappPulse";
+import CrieSeuNegocio from "../components/crieSeuNegocio/crieSeuNegocio";
 
 export default function Planos() {
 
@@ -17,7 +18,7 @@ export default function Planos() {
         <PlanosBanner />
         <NossosPlanos />
         <Conheca titulo="Crie o seu plano de negócio, agora!" />
-        <QuartaSection2 />
+        <CrieSeuNegocio />
         <SobreFooter />
         <Footer />
         <WhatsappPulse />

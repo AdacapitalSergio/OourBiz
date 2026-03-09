@@ -21,9 +21,9 @@
 }
 
 .article-nossosplanos {
-    width: 17.4%;
+    width: 33.3%;
     height: auto;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     background: #5a0539;
     color: #fff;
     box-shadow: none;
@@ -34,9 +34,9 @@
 
 .bgc-branco-nossosplanos {
     cursor: default;
-    width: 18%;
+    width: 33.3%;
     height: auto;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     background: #fff;
     color: #5a0539;
     transition: all 0.4s;

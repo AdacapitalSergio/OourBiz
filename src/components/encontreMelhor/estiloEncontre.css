@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'avenir-lt-w01_35-light1475496',sans-serif;
-    padding: 4rem 1rem 4rem 9.5rem;
+    padding: 3rem 9.5rem;
 }
 .section-encontre {
     display: flex;
@@ -14,10 +14,10 @@
 }
 
 .h1-encontre {
-    color: #fff;
+    color: #25061f;
     font-size: 2.5rem;
-    width: 50%;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .article-encontre {

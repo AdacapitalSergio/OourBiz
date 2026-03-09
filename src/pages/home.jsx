@@ -22,13 +22,13 @@ export default function Home() {
         <Header />
         <PrincipalBanner />
         <Conheca titulo="Dinamize e modernize o seu negócio" />
-        <QuartaSection />
+        <CrieSeuNegocio />
+        {/* <QuartaSection /> */}
         <Conheca titulo="Conheça a OurBiz" />
         <PosConheca />
         <EncontreMelhor />
         <ConfieSuaEmpresa />
         <QueFalamSobre />
-        <CrieSeuNegocio />
         <Conheca />
         <ArtigosRecentes />
         <Perguntas />

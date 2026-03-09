@@ -63,8 +63,8 @@ export default function SobreFooter() {
             <li><p></p><a href="/servicos/1">Consultoria para MPMEs</a></li>
             <li><a href="/servicos/2">Consultoria para Startups</a></li>
             <li><a href="/servicos/3">Eventos e formação</a></li>
-            <li><a href="/servicos/4">Marketing e estratégia</a></li>
-            <li><a href="/servicos/5">Apoio e captação de recursos</a></li>   
+            {/* <li><a href="/servicos/4">Marketing e estratégia</a></li>
+            <li><a href="/servicos/5">Apoio e captação de recursos</a></li> */}  
         </ul>
 
         <ul className="ul2-servicos">

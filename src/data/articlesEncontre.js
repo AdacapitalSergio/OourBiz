@@ -38,7 +38,7 @@ export const econtreArticles = [
         textBotao1: "Comprar agora",
         textBotao2:"Saber mais"
     },
-    {
+    /*{
         id: 4,
         icon: icon4,
         titulo: "Marketing e estratégia",
@@ -59,5 +59,5 @@ export const econtreArticles = [
         li4: "Ideal para quem busca crescimento acelerado e a segurança de um investimento sólido.",
         textBotao1: "Comprar agora",
         textBotao2:"Saber mais"
-    },
+    },*/
 ]

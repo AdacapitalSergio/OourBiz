@@ -36,10 +36,6 @@ export default function EncontreMelhor() {
 
   const artigos = [
     ...econtreArticles,
-    {
-      isExtra: true,
-      titulo: "Que tal pensarmos em grande, juntos?",
-    },
   ];
 
   const irParaServico = (servico) => {
@@ -60,32 +56,6 @@ export default function EncontreMelhor() {
         onScroll={isMobile ? handleScroll : undefined}
       >
         {artigos.map((item, index) =>
-          item.isExtra ? (
-            <article className="articleso-encontre" key={index}>
-              <h3 className="h3so-encontre">
-                Que tal pensarmos em grande, juntos?
-              </h3>
-              <div className="divso-encontre">
-                <button
-                  onClick={() => {
-                    //setPlanoSelecionado(item);
-                    //setIsModalOpen(true);
-                    setModalOpen(true);
-                    
-                  }}
-                  className="button2-encontre"
-                >
-                  Comprar agora
-                </button>
-                <Link className="link-encontreservico" to={`/servicos`}>
-                  <button className="button2-encontre">
-                    {servicoSelecionado.textBotao2}
-                  </button>
-                </Link>
-
-              </div>
-            </article>
-          ) : (
             <article className="article-encontre" key={index}>
               <img src={item.icon} alt="" className="icon-encontre" />
               <h3 className="h3-encontre">{item.titulo}</h3>
@@ -123,7 +93,7 @@ export default function EncontreMelhor() {
               </div>
             </article>
           )
-        )}
+        }
       </section>
 
       {isMobile && (

@@ -99,7 +99,7 @@ export const servicoDetalhes = [
         textBotao1: "Consultar planos",
         textBotao2:"Solicitar servico"
     },
-    {
+    /*{
         id: 4,
         icon: icon4,
         titulo: "Marketing e estratégia",
@@ -138,7 +138,7 @@ export const servicoDetalhes = [
         imagem: fundoRecursos,
         textBotao1: "Consultar planos",
         textBotao2:"Solicitar servico"
-    },
+    },*/
 
 ]
 
