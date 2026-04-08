@@ -29,11 +29,13 @@ export default function Header() {
             Serviços
           </Link>
         </li>
-        <li>
-          <Link to="/planos" className="navLi" onClick={toggleMenu}>
-            Planos
-          </Link>
-        </li>
+        {/*
+          <li>
+            <Link to="/planos" className="navLi" onClick={toggleMenu}>
+              Planos
+            </Link>
+          </li>
+         */}
         <li>
           <Link to="/vagas" className="navLi" onClick={toggleMenu}>
             Vagas

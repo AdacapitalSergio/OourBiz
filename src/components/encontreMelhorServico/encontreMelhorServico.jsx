@@ -122,11 +122,13 @@ export default function EncontreMelhorServico() {
 
           <div className="divso-encontreservico">
             {/* Passa o id do serviço na rota */}
-            <Link className="link-encontreservico" to={`/planos/${servicoSelecionado.id}`}>
-              <button className="button2-encontreservico">
-                {servicoSelecionado.textBotao1}
-              </button>
-            </Link>
+            {/*
+              <Link className="link-encontreservico" to={`/planos/${servicoSelecionado.id}`}>
+                <button className="button2-encontreservico">
+                  {servicoSelecionado.textBotao1}
+                </button>
+              </Link>
+             */}
             <Link className="link-encontreservico">
               <button
               className="button2-encontreservico"
