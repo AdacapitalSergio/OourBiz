@@ -8,7 +8,7 @@ export default function Servicos() {
       <h3 style={{ textAlign: "left", fontSize: "18px" }}>Meus serviços</h3>
       <p className="descricao">
         Após o pagamento de qualquer um dos nossos serviços, seja por transferência ou depósito, 
-        certifique-se de enviar o comprovativo para validação nos formatos PDF ou imagem ( PNG, JPG, JPEG), 
+        certifique-se de enviar o comprovativo para validação nos formatos PDF ou imagem( PNG, JPG, JPEG), 
         pelo nosso email, whatsApp, ou pelo site clicando no icon de upload de fcheiro.
       </p>
 
