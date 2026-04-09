@@ -19,13 +19,13 @@ function Rotas() {
         <Routes>
           <Route path='/' element={ <Home /> }/>
           <Route path='/servicos' element={ <Servicos /> } />
-          <Route path='/planos' element={ <Planos /> } />
+          {/* <Route path='/planos' element={ <Planos /> } /> */}
           <Route path='/quemsomos' element={ <QuemSomos /> } />
           <Route path='/contactar' element={ <Contactar /> } />
           <Route path='/login' element={ <Login /> } />
           <Route path='/cadastrar' element={ <Cadastrar /> } />
-          <Route path='/criarsite' element={ <CriarSite /> } />
-          <Route path="/planos/:servicoId" element={<Planos />} />
+          {/* <Route path='/criarsite' element={ <CriarSite /> } /> */}
+          {/* <Route path="/planos/:servicoId" element={<Planos />} /> */}
           <Route path="/servicos/:servicoId" element={<Servicos />} />
 
           <Route path='/dashboard-cliente' element={ <DashboardCliente /> } />
