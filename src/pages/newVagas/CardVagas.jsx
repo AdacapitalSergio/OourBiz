@@ -23,18 +23,18 @@ const CardVagas = () => {
             <div className="vaga-card" key={vaga.id}>
               <img src={vagaIcon} alt="vaga" className="vaga-icon" />
 
-              <h2 className="vaga-nome">{vaga.vaga}</h2>
+              <h2 className="vaga-nome">VAGA:{vaga.vaga}</h2>
 
-              <p className="vaga-info">
+              {/*<p className="vaga-info">
                 <strong>Área:</strong> {vaga.area}
+              </p>*/}
+
+              <p className="vaga-info">
+                <strong>Local de trabalho:</strong> {vaga.local_trabalho}
               </p>
 
               <p className="vaga-info">
-                <strong>Local:</strong> {vaga.local_trabalho}
-              </p>
-
-              <p className="vaga-info">
-                <strong>Vagas:</strong> {vaga.numero_vagas}
+                <strong>Número de vagas:</strong> {vaga.numero_vagas}
               </p>
 
               <Link to={`/detalhesvagas/${vaga.id}`} className="vaga-btn">
