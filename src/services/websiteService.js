@@ -88,3 +88,38 @@ export const enviarFormulario = async (dados) => {
         throw error;
     }
 };
+
+export const enviarCandidatura = async (dados) => {
+  try {
+    const formData = new FormData();
+
+    // Campos de texto
+    formData.append("titulo_vaga", dados.titulo_vaga);
+    formData.append("Primeiro_nome", dados.Primeiro_nome);
+    formData.append("Sobrenome", dados.Sobrenome);
+    formData.append("email", dados.email);
+    formData.append("telefone", dados.telefone);
+    formData.append("localizacao", dados.localizacao);
+    formData.append("formacao", dados.formacao);
+    formData.append("escolaridade", dados.escolaridade);
+    formData.append("ano_inicio", dados.ano_inicio);
+    formData.append("ano_termino", dados.ano_termino);
+
+    // Ficheiros
+    formData.append("bi", dados.bi);
+    formData.append("declaracao_certificado", dados.declaracao_certificado);
+    formData.append("curriculum_vitae", dados.curriculum_vitae);
+
+    const response = await axios.post(`${API_URL2}/candidaturas/candidatar/`, formData, {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    });
+    console.log(dados)
+    return response.data;
+  } catch (error) {
+    console.log(dados)
+    console.error("Erro ao enviar candidatura:", error);
+    throw error;
+  }
+};

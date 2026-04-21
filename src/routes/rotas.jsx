@@ -10,6 +10,8 @@ import Login from '../pages/login';
 import CriarSite from '../pages/criarSite';
 import DashboardCliente from '../pages/dashboardCliente';
 import PerfilCliente from '../pages/perfilCliente';
+import CardVagas from '../pages/newVagas/CardVagas';
+import DetalhesVaga from '../pages/newVagas/DetalhesVagas';
 
 function Rotas() {
 
@@ -27,6 +29,8 @@ function Rotas() {
           {/* <Route path='/criarsite' element={ <CriarSite /> } /> */}
           {/* <Route path="/planos/:servicoId" element={<Planos />} /> */}
           <Route path="/servicos/:servicoId" element={<Servicos />} />
+          <Route path="/vagas" element={<CardVagas />} />
+          <Route path="/detalhesvagas/:vagaId" element={<DetalhesVaga />} />
 
           <Route path='/dashboard-cliente' element={ <DashboardCliente /> } />
           <Route path='/perfil-cliente' element={ <PerfilCliente /> } />

@@ -145,7 +145,5 @@ export const servicoDetalhes = [
 export const servicos = [
     {value:"Consultoria para MPMEs"},    
     {value:"Consultoria para Startups"},
-    {value:"Eventos e Formação"},
-    {value:"Marketing e estratégia"},
-    {value:"Apoio e captação de recursos"}
+    {value:"Eventos e Formação"}
 ]

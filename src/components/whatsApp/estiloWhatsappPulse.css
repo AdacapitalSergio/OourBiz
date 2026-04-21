@@ -54,8 +54,8 @@
 
 @media (max-width: 768px) {
   .whatsapp-pulse {
-    bottom: 100px;
-    right: 60px;
+    bottom: 40px;
+    right: 30px;
     width: 55px;
     height: 55px;
   }

@@ -85,7 +85,7 @@ export default function EncontreMelhor() {
                   {item.textBotao1}
                 </button>
 
-                <Link className="link-encontreservico" to={`/servicos/${item.id}`}>
+                <Link className="link-encontre" to={`/servicos/${item.id}`}>
                   <button className="button2-encontre">
                     {item.textBotao2}
                   </button>

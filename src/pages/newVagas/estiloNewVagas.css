@@ -1,0 +1,213 @@
+.vagas-container {
+  padding: 120px 20px 60px 20px;
+  background: #f9fafb;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* TÍTULO */
+.vagas-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.vagas-subtitle {
+  text-align: center;
+  color: #444;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.vagas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.vaga-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  text-align: left;
+  position: relative;
+}
+
+.vaga-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* ICON */
+.vaga-icon {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+/* NOME DA VAGA */
+.vaga-nome {
+  font-size: 1.3rem;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+/* INFO */
+.vaga-info {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1px;
+}
+
+/* BOTÃO */
+.vaga-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #6b0946;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.vaga-btn:hover {
+  background: #4a0630;
+}
+
+.vaga-btn-icon {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+/*DETALHES DA VAGA*/
+.detalhes-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 120px 20px 40px 20px;
+}
+
+.back-link {
+  color: #6b0946;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.apply-btn {
+  margin: 20px 0;
+  padding: 12px 25px;
+  background: #6b0946;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.apply-btn:hover {
+  background: #4a0630;
+}
+
+.local {
+  color: #555;
+}
+
+/* 🔥 RESPONSIVO */
+@media (max-width: 768px) {
+  .detalhes-container {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .apply-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/*NEU PAGE DETALHES*/
+.vaga-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 120px 2rem 2rem 2rem;
+  font-family: sans-serif;
+}
+
+.back-btn {
+  display: inline-flex;
+  gap: 6px;
+  text-decoration: underline;
+  color: #6b0946;
+  margin-bottom: 1rem;
+}
+
+.vaga-header h1 {
+  font-size: 1.5rem;
+}
+
+.empresa {
+  color: #6b0946;
+  font-weight: 500;
+}
+
+.vaga-info {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  color: #555;
+}
+
+.btn-primary {
+  background: #6b0946;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #4a0631;
+}
+
+.vaga-section {
+  margin-top: 2rem;
+}
+
+.vaga-section h3 {
+  margin-bottom: 0.5rem;
+  color: #6b0946;
+}
+
+.vaga-section ul {
+  padding-left: 20px;
+}
+
+.vaga-section li {
+  margin-bottom: 5px;
+}
+
+.cultura-final {
+  margin-top: 1rem;
+  font-style: italic;
+}

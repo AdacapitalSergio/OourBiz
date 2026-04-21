@@ -1,0 +1,121 @@
+.modal-overlay-candidatura {
+  position: fixed;
+  inset: 0; /* substitui top/left/width/height */
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  z-index: 999;
+}
+
+.modal-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 98%;
+  max-width: max-content;
+  position: relative;
+  overflow-y: auto;
+}
+
+.modal-close-candidatura {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: rgba(255, 0, 0, 0.3);
+  color: #ac0c0c;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+}
+
+.modal-box h2 {
+  font-size: 1.2rem;
+  color: #380524;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.input-selentio {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.input-group {
+  width: 18rem;
+}
+
+.modal-box label {
+  font-size: small;
+}
+
+/* INPUTS */
+.modal-box input {
+  width: 95%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.modal-box select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/* BOTÃO */
+.btn-submit {
+  width: 220px;
+  padding: 12px;
+  background: #6b0946;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  gap: 8px;
+}
+
+@media (max-width: 850px) {
+  .modal-overlay-candidatura {
+    padding: 0;
+  }
+  .modal-box {
+    padding: 15px;
+    width: 100%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .modal-box h2 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    width: 90%;
+    text-align: left;
+  }
+
+  .input-selentio {
+    width: 100%;
+    display: table;
+    gap: 0;
+  }
+
+  .input-group {
+    width: 98%;
+  }
+
+  .modal-box input {
+    margin-bottom: 2px;
+  }
+
+  .modal-box select {
+    margin-bottom: 2px;
+  }
+}

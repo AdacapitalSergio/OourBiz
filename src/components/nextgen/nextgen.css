@@ -1,0 +1,161 @@
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 4rem 1rem;
+}
+
+/* HERO */
+.hero {
+  height: 95vh;
+  background: url('/images/hero.jpg') center/cover no-repeat;
+}
+
+.hero-overlay {
+  background: linear-gradient(135deg, #6b0946cc, #9c0d6acc);
+  height: 100%;
+  padding: 2rem;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-content {
+  text-align: center;
+  margin-top: 12%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.btn-main {
+  margin-top: 1rem;
+  background: white;
+  color: #6b0946;
+  padding: 12px 24px;
+  border-radius: 999px;
+}
+
+/* SOBRE */
+.sobre {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.sobre-img {
+  width: 350px;
+  border-radius: 20px;
+}
+
+/* MENTORES */
+.mentores {
+  background: linear-gradient(135deg, #6b0946, #9c0d6a);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.mentores-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.mentor-card {
+  background: #ffffff22;
+  padding: 1.5rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+/* BENEFÍCIOS */
+.beneficios-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.beneficio-card {
+  height: 120px;
+  flex: 1;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #6b0946, #ff0080);
+}
+
+/* AGENDA */
+.agenda-box {
+  background: #f3f3f3;
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+/* DATAS */
+.datas-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.data-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* INSCRIÇÃO */
+.inscricao {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #6b0946, #9c0d6a);
+  padding: 4rem;
+  color: white;
+}
+
+.insc-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+.insc-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* CONTADOR DE TEMPO */
+.countdown {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.count-box {
+  background: white;
+  color: #6b0946;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 70px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.count-box span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.count-box p {
+  font-size: 0.7rem;
+  margin-top: 5px;
+}
+
+.countdown-finished {
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+}
