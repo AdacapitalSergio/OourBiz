@@ -5,10 +5,8 @@ const API_URL2 = "https://api.v1.ourbiz.ao/api"
 export const enviarFormularioWebsite = async (dados) => {
     try {
         const response = await axios.post(`${API_URL2}/solicitar/website`, dados);
-        console.log(dados)
         return response.data;
     } catch (error) {
-        console.log(dados)
         console.error("Erro ao enviar o formulário:", error);
         throw error;
     }
@@ -17,10 +15,8 @@ export const enviarFormularioWebsite = async (dados) => {
 export const sendContactMessage = async (dados) => {
     try {
         const response = await axios.post(`${API_URL2}/contacto/`, dados);
-        console.log(dados)
         return response.data;
     } catch (error) {
-        console.log(dados)
         console.error("Erro ao enviar o formulário de contacto:", error);
         throw error;
     }
@@ -80,10 +76,8 @@ export const enviarContacto = async (dados) => {
 export const enviarFormulario = async (dados) => {
     try {
         const response = await axios.post(`${API_URL2}/solicitar/servico/`, dados);
-        console.log(dados)
         return response.data;
     } catch (error) {
-        console.log(dados)
         console.error("Erro ao enviar o formulário:", error);
         throw error;
     }
@@ -115,10 +109,8 @@ export const enviarCandidatura = async (dados) => {
         "Content-Type": "multipart/form-data",
       },
     });
-    console.log(dados)
     return response.data;
   } catch (error) {
-    console.log(dados)
     console.error("Erro ao enviar candidatura:", error);
     throw error;
   }

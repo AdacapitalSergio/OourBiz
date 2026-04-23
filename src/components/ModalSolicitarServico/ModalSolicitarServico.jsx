@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react"; 
 import { toast } from "sonner"; 
 import "./ModalSolicitarServico.css"; 
-import { servicos } from "../../data/servicoDetalhes";
+import { area_atuacao, servicos, sub_servicos } from "../../data/servicoDetalhes";
 import { municipiosList, cidades } from "../../data/CidadesList";
 import { enviarFormulario } from "../../services/websiteService";
 
@@ -11,16 +11,21 @@ export default function ModalSolicitarServico({ open, onClose }) {
 
 	const [formData, setFormData] = useState({ 
 		seuNome: "", 
-		servico: "", 
+		servico: "",
+		servicoLabel: "",
+		subServico: "" , 
 		cidade: "", 
 		cidadeLabel: "", 
 		municipio: "", 
 		suaEmpresa: "", 
 		seuTelefone: "", 
-		seuEmail: "" 
+		seuEmail: "",
+		contactoPreferido: ""
 	}); 
-	const [municipios, setMunicipios] = useState([]); 
-	const [loading, setLoading] = useState(false); 
+	const [municipios, setMunicipios] = useState([]);
+	const [subServicos, setSubServicos] = useState([]); 
+	const [loading, setLoading] = useState(false);
+
 	const handleChange = (e) => { 
 		const { name, value } = e.target; 
 		if (name === "cidade") { 
@@ -33,6 +38,16 @@ export default function ModalSolicitarServico({ open, onClose }) {
 				municipio: "" 
 			}));
 
+		} else if (name === "servico") { 
+			const servicoSelecionado = servicos.find(s => s.value === value); 
+			setSubServicos(sub_servicos[value] || []); 
+			setFormData(prev => ({ 
+				...prev, 
+				servico: value, 
+				servicoLabel: servicoSelecionado ? servicoSelecionado.label : "", 
+				subServico: "" 
+			}));
+
 		} else { 
 			setFormData(prev => ({ ...prev, [name]: value })); 
 		} 
@@ -40,18 +55,21 @@ export default function ModalSolicitarServico({ open, onClose }) {
 	const handleSubmit = async (e) => { 
 		e.preventDefault(); 
 		setLoading(true); 
-		const formDataParaEnvio = { ...formData, cidade: formData.cidadeLabel }; 
+		const formDataParaEnvio = { ...formData, cidade: formData.cidadeLabel, servico: formData.servicoLabel }; 
 		try { await enviarFormulario(formDataParaEnvio); 
 			toast.success("Formulário enviado com sucesso!", { description: "Entraremos em contacto em breve.", }); 
 			setFormData({ 
 				seuNome: "", 
-				servico: "", 
+				servico: "",
+				servicoLabel: "",
+				subServico: "" , 
 				cidade: "", 
 				cidadeLabel: "", 
 				municipio: "", 
 				suaEmpresa: "", 
 				seuTelefone: "", 
-				seuEmail: "" 
+				seuEmail: "",
+				contactoPreferido: ""
 			});
       console.log("Formulário enviado:", formDataParaEnvio);
 			setMunicipios([]); 
@@ -92,10 +110,11 @@ export default function ModalSolicitarServico({ open, onClose }) {
 									<div className="modal-column"> 
 										<input type="text" name="seuNome" placeholder="Digite seu nome completo" value={formData.seuNome} onChange={handleChange} required /> 
 										<select name="cidade" value={formData.cidade} onChange={handleChange} required > 
-										<option value="">Selecione sua província de residência</option> 
-										{cidades.map(cidade => ( 
-											<option key={cidade.value} value={cidade.value}> {cidade.label} </option> 
-										))} </select> 
+											<option value="">Selecione sua província de residência</option> 
+											{cidades.map(cidade => ( 
+												<option key={cidade.value} value={cidade.value}> {cidade.label} </option> 
+											))}
+										</select> 
 										<select name="municipio" value={formData.municipio} onChange={handleChange} required disabled={!municipios.length} > 
 											<option value="">Selecione seu município de residência</option> 
 											{municipios.map(municipio => ( 
@@ -106,13 +125,27 @@ export default function ModalSolicitarServico({ open, onClose }) {
 									</div> 
 									
 									<div className="modal-column"> 
-										<input type="text" name="suaEmpresa" placeholder="Diga a área de atuação da sua empresa" value={formData.suaEmpresa} onChange={handleChange} required /> 
+										
+										<select name="suaEmpresa" value={formData.suaEmpresa} onChange={handleChange} required > 
+											<option value="">Selecione a área de atuação</option> 
+											{area_atuacao.map(area => ( 
+												<option key={area.value} value={area.value}> {area.value} </option>
+											))} 
+										</select>
+
 										<select name="servico" value={formData.servico} onChange={handleChange} required > 
 											<option value="">Selecione um serviço que deseja</option> 
 											{servicos.map(servico => ( 
-												<option key={servico.value} value={servico.value}> {servico.value} </option>
+												<option key={servico.value} value={servico.value}> {servico.label} </option>
 											))} 
 										</select>
+
+										<select name="subServico" value={formData.subServico} onChange={handleChange} required disabled={!subServicos.length} > 
+											<option value="">Selecione um sub-serviço</option> 
+											{subServicos.map(sub => ( 
+												<option key={sub} value={sub}> {sub} </option> 
+											))} 
+										</select> 
 										<div className="contact-box">
 										<p style={{fontWeight: "bolder", fontSize: "14px"}}>Como prefere ser contactado?</p>
 										<div className="radio-group">

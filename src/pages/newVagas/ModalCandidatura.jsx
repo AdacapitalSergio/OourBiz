@@ -42,7 +42,7 @@ export default function ModalCandidatura({ open, onClose, vaga }) {
     try {
       await enviarCandidatura(form);
 
-      toast.success("Candidatura enviada com sucesso!");
+      toast.success("Candidatura enviada com sucesso! Verifique seu e-mail para confirmar sua candidatura.");
 
       setForm({
         titulo_vaga: vaga?.vaga || "",
@@ -110,8 +110,8 @@ export default function ModalCandidatura({ open, onClose, vaga }) {
                 </div>
 
                 <div className="input-group">
-                  <label>Formação</label>
-                  <input name="formacao" placeholder="Formação" value={form.formacao} onChange={handleChange} required />
+                  <label>Área de formação</label>
+                  <input name="formacao" placeholder="Área de formação" value={form.formacao} onChange={handleChange} required />
                 </div>
               </div>
 
@@ -121,9 +121,10 @@ export default function ModalCandidatura({ open, onClose, vaga }) {
                   <label>Escolaridade</label>
                   <select name="escolaridade" value={form.escolaridade} onChange={handleChange} required>
                     <option value="">Selecione</option>
-                    <option value="medio">Ensino médio</option>
-                    <option value="universidade">Universidade</option>
-                    <option value="licenciado">Licenciado</option>
+                    <option value="Ensino medio">Ensino médio</option>
+                    <option value="Ensino superior (frequência)">Ensino superior (frequência)</option>
+                    <option value="Ensino superior (licenciatura)">Ensino superior (licenciatura)</option>
+                    <option value="Pós-graduação">Pós-graduação</option>
                   </select>
                 </div>
 

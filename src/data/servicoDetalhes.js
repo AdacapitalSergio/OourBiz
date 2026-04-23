@@ -142,8 +142,27 @@ export const servicoDetalhes = [
 
 ]
 
-export const servicos = [
-    {value:"Consultoria para MPMEs"},    
-    {value:"Consultoria para Startups"},
-    {value:"Eventos e Formação"}
+export const area_atuacao = [
+    {value:"Petróleo e Gás"},    
+    {value:"Agricultura e Agroindústria"},
+    {value:"Indústria Transformadora"},
+    {value:"Mineração"},    
+    {value:"Logística e Transporte"},
+    {value:"Eventos e Formação"},
+    {value:"Serviços e Comércio"},
+    {value:"Energia e Água"},    
+    {value:"Tecnologia e Inovação"},
+    {value:"Educação e Saúde"}
 ]
+
+export const servicos = [
+    { value: "Consultoria_para_MPMEs", label: "Consultoria para MPMEs" },
+    { value: "Consultoria_para_Startups", label: "Consultoria para Startups" },
+    { value: "Eventos_e_Formação", label: "Eventos e Formação" },
+];
+
+export const sub_servicos = {
+    Consultoria_para_MPMEs: ["Plano de negócios", "Estudos de viabilidade", "Reestruturação empresarial"],
+    Consultoria_para_Startups: ["Ideação", "MVP (Produto Mínimo Viável)", "Preparação para o Pitch", "Incubação", "Acesso a investidores"],
+    Eventos_e_Formação: ["Workshops", "Conferências e Palestras", "Capacitações"],
+};
