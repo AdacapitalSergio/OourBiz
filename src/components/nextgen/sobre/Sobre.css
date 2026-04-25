@@ -1,0 +1,72 @@
+.section-sobre {
+  padding: 4rem;
+  display: flex;
+  gap: 2rem;
+  width: 98%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.tag-sobre {
+  color: #9b0b64;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 4rem;
+  border-bottom: #dd058a  1px solid;
+  padding-bottom: 6px;
+  width: 240px;
+}
+
+.sobre-content {
+  max-width: 500px;
+  padding: 0 1rem;
+}
+
+.sobre-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 28px;
+  color: #6b0946;
+}
+
+.sobre-content p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sobre-img {
+  max-width: 22rem;
+  height: 24rem;
+  border-radius: 20px;
+  box-shadow: 0 0 25px 22px rgba(117, 18, 79, 0.4);
+  margin-top: 5rem;
+}
+
+@media (max-width: 850px) {
+  .section-sobre {
+        padding: 4rem 1rem;
+        display: block;
+        width: 95%;
+    }
+
+    .tag-sobre {
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+        width: 230px;
+    }
+
+    .sobre-content {
+        max-width: max-content;
+        padding: 0 1rem;
+    }
+
+    .sobre-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 26px;
+    }
+
+    .sobre-img {
+        margin-top: 3rem;
+    }
+}

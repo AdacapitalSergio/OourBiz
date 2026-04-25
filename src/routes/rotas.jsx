@@ -12,6 +12,7 @@ import DashboardCliente from '../pages/dashboardCliente';
 import PerfilCliente from '../pages/perfilCliente';
 import CardVagas from '../pages/newVagas/CardVagas';
 import DetalhesVaga from '../pages/newVagas/DetalhesVagas';
+import NextGen from '../pages/NextGen';
 
 function Rotas() {
 
@@ -21,6 +22,7 @@ function Rotas() {
         <Routes>
           <Route path='/' element={ <Home /> }/>
           <Route path='/servicos' element={ <Servicos /> } />
+          <Route path='/nextgen' element={ <NextGen /> } />
           {/* <Route path='/planos' element={ <Planos /> } /> */}
           <Route path='/quemsomos' element={ <QuemSomos /> } />
           <Route path='/contactar' element={ <Contactar /> } />
