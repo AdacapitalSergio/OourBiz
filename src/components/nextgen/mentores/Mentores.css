@@ -1,0 +1,147 @@
+.palestrantes-section {
+  background: linear-gradient(180deg, #6b0946, #8c0c5a);
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.palestrantes-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  text-align: left;
+  border-bottom: 1px solid #fff;
+  width: fit-content;
+  min-width: 22rem;
+  padding: 0 0 8px 0;
+}
+
+.palestrantes-section h2 {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+.palestrantes-section p {
+  font-size: 1.1rem;
+  margin: 2rem 0;
+  width: 60%;
+  margin: 0 auto 3rem auto;
+}
+
+.sub {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+/* SWIPER */
+.palestrantes-swiper {
+  width: 100%;
+}
+
+/* SLIDE */
+.card-slide {
+  width: 260px !important;
+}
+
+/* CARD */
+.card {
+  background: #bb3e91;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 20px 8px;
+  text-align: center;
+  transition: 0.3s;
+  height: 310px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE */
+.card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+/* TEXT */
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.cargo {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.empresa {
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: block;
+  color: #fff;
+}
+
+/* BUTTON */
+.card button {
+  background: #ff2c8b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 14px 16px;
+  border-radius: 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 60%;
+}
+
+.card button:hover {
+  background: #ff4da6;
+}
+
+/* SOCIAL */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials a {
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+  background-color: rgba(255, 111, 248, 0.4);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.socials a:hover {
+  color: #ff2c8b;
+  transform: scale(1.2);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .palestrantes-section h2 {
+    font-size: 22px;
+  }
+
+  .palestrantes-section p {
+        width: 100%;
+    }
+
+  .card-slide {
+    width: 220px !important;
+  }
+}

@@ -16,6 +16,7 @@ export default function Header() {
           <a href="#">Palestrantes</a>
           <a href="#">Programação</a>
           <a href="#">Locais</a>
+          <a href="#">Voluntariado</a>
           <a href="#">Inscrição</a>
         </nav>
 
@@ -32,6 +33,7 @@ export default function Header() {
         <a onClick={() => setOpen(false)}>Palestrantes</a>
         <a onClick={() => setOpen(false)}>Programação</a>
         <a onClick={() => setOpen(false)}>Locais</a>
+        <a onClick={() => setOpen(false)}>Voluntariado</a>
         <a onClick={() => setOpen(false)}>Inscrição</a>
         <button className="mobile-contact">Contactar</button>
       </div>

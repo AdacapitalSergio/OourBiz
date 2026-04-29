@@ -1,0 +1,151 @@
+.eventos-section {
+    padding: 60px 20px;
+    background: #f5f5f5;
+}
+
+.subtitulo {
+    color: #9b0b64;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    border-bottom: #dd058a  1px solid;
+    padding-bottom: 6px;
+    width: 240px;
+}
+
+.titulo {
+    font-size: 1.9rem;
+    margin-bottom: 30px;
+    color: #46072e;
+}
+
+/* WRAPPER */
+.carousel-wrapper {
+    position: relative;
+}
+
+/* CAROUSEL */
+.carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* CARD RESPONSIVO */
+.card-evento {
+    min-width: 320px;
+    max-width: 550px;
+    width: 90%;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    flex-shrink: 0;
+}
+
+/* MAPA */
+.mapa {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    opacity: 0.9;
+}
+
+/* BODY */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+}
+
+/* DESKTOP: duas colunas */
+@media (min-width: 600px) {
+    .card-body {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.info-left,
+.info-right {
+    display: flex;
+    gap: 10px;
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+}
+
+/* TEXTO */
+.data {
+    font-weight: bold;
+}
+
+.local {
+    font-weight: 500;
+}
+
+/* SOCIAL */
+.socials {
+    display: flex;
+    gap: 8px;
+    margin-top: 5px;
+    color: #ff007a;
+}
+
+.socials span {
+    font-size: 0.8rem;
+}
+/* BOTÃO */
+.btn-inscrever {
+    margin: 10px 15px 15px;
+    padding: 10px 14px;
+    border: none;
+    background: #ff007a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* CONTROLES */
+.controls {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.controls button {
+    border: none;
+    background: #e4e2e2;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #ff007a;
+}
+
+/* DOTS */
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.dots span {
+    width: 20px;
+    height: 5px;
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.dots span.active {
+    background: #6b0946;
+}

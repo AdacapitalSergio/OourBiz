@@ -115,3 +115,8 @@ export const enviarCandidatura = async (dados) => {
     throw error;
   }
 };
+
+export const enviarInscricao = async (data) => {
+    const response = await axios.post(`${API_URL2}/inscricao`, data);
+    return response.data;
+};

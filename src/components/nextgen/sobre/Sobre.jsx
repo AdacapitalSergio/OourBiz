@@ -9,8 +9,9 @@ export default function Sobre() {
         <h1 className="tag-sobre">Sobre</h1>
         <h2>O que é a OurBiz-NextGen?</h2>
         <p>
-          O <span style={{ color: '#7c1153', fontWeight: 'bold' }}>OurBiz-NextGen</span> é um evento inovador voltado para estudantes 
-          universitários intressados em empreendedorismo e modernização dos negócios.
+          O <span style={{ color: '#7c1153', fontWeight: 'bold' }}>OurBiz-NextGen</span> é 
+          um evento inovador voltado para estudantes universitários intressados em 
+          empreendedorismo e modernização dos negócios.
         </p>
         <p>
             Nossa missão é inspirar e capacitar a próxima geração de 

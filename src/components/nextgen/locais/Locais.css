@@ -1,0 +1,122 @@
+.container-locais {
+    padding: 3rem;
+    background-color: #fff;
+}
+
+.container-locais h2 {
+    color: #3f0435;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.locais-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.locais-card-left {
+    width: 35%;
+}
+
+.locais-card {
+    position: relative;
+}
+.locais-card img {
+    width: 100%;
+    border-radius: 1.2rem;
+}
+
+.locais-card-data {
+    display: flex;
+    gap: 0.5rem;
+    position: absolute;
+    background-color: rgba(252, 8, 211, 0.7);
+    top: 14px;
+    left: 14px;
+    justify-content: baseline;
+    align-items: center;
+    padding: 5px 12px;
+    border-radius: 16px;
+}
+
+.locais-card-data img {
+    width: 25px;
+}
+
+.locais-card-data p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.locais-card-right {
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.locais-card-right .locais-card-data {
+    display: flex;
+    gap: 0.5rem;
+    position: absolute;
+    background-color: rgba(252, 8, 211, 0.7);
+    top: 14px;
+    left: 14px;
+    justify-content: baseline;
+    align-items: center;
+    padding: 5px 12px;
+    border-radius: 16px;
+}
+
+.locais-card-right .locais-card-data img {
+    width: 25px;
+}
+
+.locais-card-right .locais-card-data p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.locais-conteudo {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+}
+
+.locais-conteudo p {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.locais-conteudo h3 {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .container-locais {
+        padding: 3rem 1rem;
+    }
+    .container-locais h2 {
+        font-size: 1.9rem;
+        margin-bottom: 2rem;
+    }
+
+    .locais-card-left {
+        width: 98%;
+    }
+
+    .locais-card-right {
+        width: 98%;
+    }
+
+    .locais-card-right img {
+        width: 100%;
+    }
+}

@@ -39,28 +39,6 @@
   border-radius: 999px;
 }
 
-/* MENTORES */
-.mentores {
-  background: linear-gradient(135deg, #6b0946, #9c0d6a);
-  color: white;
-  text-align: center;
-  padding: 4rem 1rem;
-}
-
-.mentores-grid {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.mentor-card {
-  background: #ffffff22;
-  padding: 1.5rem;
-  border-radius: 16px;
-  backdrop-filter: blur(10px);
-}
-
 /* BENEFÍCIOS */
 .beneficios-grid {
   display: flex;
