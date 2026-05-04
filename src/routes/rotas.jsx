@@ -13,6 +13,8 @@ import PerfilCliente from '../pages/perfilCliente';
 import CardVagas from '../pages/newVagas/CardVagas';
 import DetalhesVaga from '../pages/newVagas/DetalhesVagas';
 import NextGen from '../pages/NextGen';
+import Voluntariado from '../pages/Voluntariado';
+import CadastroVoluntariado from '../pages/CadastroVoluntariado';
 
 function Rotas() {
 
@@ -23,6 +25,8 @@ function Rotas() {
           <Route path='/' element={ <Home /> }/>
           <Route path='/servicos' element={ <Servicos /> } />
           <Route path='/nextgen' element={ <NextGen /> } />
+          <Route path='/voluntariado' element={ <Voluntariado /> } />
+          <Route path='/candidatar-voluntariado' element={ <CadastroVoluntariado /> } />
           {/* <Route path='/planos' element={ <Planos /> } /> */}
           <Route path='/quemsomos' element={ <QuemSomos /> } />
           <Route path='/contactar' element={ <Contactar /> } />

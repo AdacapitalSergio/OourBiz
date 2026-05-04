@@ -4,7 +4,7 @@ import imagem from "../../../assets/imagens/Sobre_img.png";
 
 export default function Sobre() {
   return (
-    <section className="section-sobre">
+    <section className="section-sobre" id="sobre-nextgen">
       <div className="sobre-content">
         <h1 className="tag-sobre">Sobre</h1>
         <h2>O que é a OurBiz-NextGen?</h2>

@@ -14,7 +14,7 @@ export default function Mentores() {
   const [selected, setSelected] = useState(null);
 
   return (
-    <section className="palestrantes-section">
+    <section className="palestrantes-section" id="palestrantes-nextgen">
 
       <h4>Palestrantes e mentores</h4>
       <h2>Aprenda com quem já está transformando negócios</h2>

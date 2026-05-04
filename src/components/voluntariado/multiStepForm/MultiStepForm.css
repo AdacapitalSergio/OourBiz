@@ -1,0 +1,167 @@
+.multistep-section {
+    padding: 10rem 0 2rem 0;
+}
+
+.multistep-section h1 {
+    text-align: center;
+    color: #6b0946;
+    font-size: 2rem;
+}
+
+.div-multistep {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    padding: 3rem;
+}
+
+.div-multistep article {
+    max-width: 400px;
+    margin-top: 3rem;
+}
+
+.div-multistep article p {
+    color: #444;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.p-color-multistep {
+    color: #6b0946 !important;
+}
+
+.form-container {
+    width: 500px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* STEPS */
+.steps {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.step {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff;
+    border: #aaa 1px solid;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step.active {
+    background: #75084b;
+    color: #fff;
+}
+
+/* FORM */
+.form-step {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 90%;
+    background-color: #eee;
+}
+
+select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 95%;
+}
+
+textarea {
+    min-height: 46px;
+}
+
+/* GROUPS */
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    background: #6b0946;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.buttons button:hover {
+    opacity: 0.7;
+}
+
+.buttons .btn-prev {
+    background-color: transparent;
+    border: #6b0946 1.5px solid;
+    color: #6b0946;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .div-multistep {
+        display: table;
+        padding: 1rem;
+    }
+
+    .div-multistep article {
+        margin-top: 1rem;
+    }
+
+    .multistep-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .form-container {
+        padding: 1rem;
+        width: 92%;
+    }
+}
+
+.teste-div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    gap: 8px;
+}
+
+.teste-inp {
+    margin-bottom: 6px;
+}

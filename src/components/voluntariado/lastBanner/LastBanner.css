@@ -1,0 +1,66 @@
+.hero-lastbanner {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  position: relative;
+}
+
+.overlay-lastbanner {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(122, 11, 80, 0.6), rgba(80, 7, 52, 1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.hero-content-lastbanner {
+  text-align: center;
+  color: white;
+  max-width: 700px;
+  justify-content: center;
+}
+
+.hero-content-lastbanner h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.hero-btn-lastbanner {
+  background: white;
+  color: #9b0b64;
+  padding: 20px 28px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  animation: shake 14s infinite;
+  box-shadow: 0 0 12px 6px rgb(247, 36, 166);
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-4px); }
+  20%, 40%, 60%, 80% { transform: translateX(4px); }
+}
+
+@media (max-width: 768px) {
+    .hero-lastbanner {
+        height: 300px;
+        padding: 3rem 0;
+    }
+    .hero-content-lastbanner {
+        font-size: 1.5rem;
+        padding: 0 1rem;
+    }
+  .hero-content-lastbanner h1 {
+    font-size: 1.5rem;
+  }
+
+}

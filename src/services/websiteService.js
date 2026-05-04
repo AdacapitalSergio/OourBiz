@@ -120,3 +120,8 @@ export const enviarInscricao = async (data) => {
     const response = await axios.post(`${API_URL2}/inscricao`, data);
     return response.data;
 };
+
+export const enviarFormularioVoluntariado = async (data) => {
+    const response = await axios.post(`${API_URL2}/voluntariado`, data);
+    return response.data;
+};

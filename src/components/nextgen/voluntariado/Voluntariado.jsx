@@ -13,7 +13,7 @@ export default function Voluntariado() {
                 mentes para um futuro de grandes inovadores, e a sua ajuda pode ainda 
                 levar-te a obter vários beneficios.
             </p>
-            <Link className="btn-voluntariado">
+            <Link to="/voluntariado" className="btn-voluntariado">
                 Saber mais como voluntariar-se
             </Link>
         </div>

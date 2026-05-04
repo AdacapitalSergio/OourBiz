@@ -4,6 +4,8 @@ import icon_progra2 from "../assets/imagens/icon_proga2.png";
 import icon_progra3 from "../assets/imagens/icon_proga3.png";
 import icon_progra4 from "../assets/imagens/icon_proga4.png";
 import imagemEventos from "../assets/imagens/ImagemEventos2.png";
+import icon1 from "../assets/imagens/icon1.svg";
+import { Check } from "lucide-react";
 
 export const mentores = [
   {
@@ -135,8 +137,6 @@ export const programacao_nextgen = [
   },
 ]
 
-
-// dataEventos.js
 export const eventos = [
     {
         id: 1,
@@ -189,3 +189,31 @@ export const eventos = [
         imagem: imagemEventos
     }
 ];
+
+export const beneficiosVoluntariado = [
+    {
+        id: 1,
+        icon: Check,
+        titulo: "Benefícios",
+        beneficios1li: [
+            "Certificado profissional com competências adquiridas",
+            "Experiência prática real em projetos e empresas (estágios profissionais)",
+            "Formações exclusivas gratuitas (empreendedorismo, negócios, soft skills)",
+            "Networking com empresários e mentores",
+            "Carta de recomendação (para os melhores)",
+            "Participação em eventos e imersões empresariais",
+            "Aprender como funciona uma empresa por dentro",
+            "Destaque e visibilidade profissional (CV e redes sociais)",
+            "Possibilidade de ganhar comissões e prémios"
+        ],
+    },
+    {
+        id: 2,
+        icon: Check,
+        titulo: "Requisitos",
+        beneficios1li: [
+            "Ser um estudante de uma das instituições onde decorrerão o evento",
+            "Ter disponibilidade no decorrer de toda a atividade"
+        ],
+    },
+]

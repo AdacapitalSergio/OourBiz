@@ -96,7 +96,7 @@ export default function ModalMentores({ open, onClose, data }) {
 
             {/* CLOSE */}
             <button className="close-btno" onClick={onClose}>
-              <X size={18} />
+              <X size={22} />
             </button>
 
             {/* LINHA SUPERIOR */}

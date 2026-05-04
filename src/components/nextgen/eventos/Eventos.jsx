@@ -23,7 +23,7 @@ export default function Eventos() {
     };
 
     return (
-        <section className="eventos-section">
+        <section className="eventos-section" id="locais-nextgen">
 
             <h4 className="subtitulo">Datas e locais</h4>
             <h2 className="titulo">Onde e quando vai acontecer?</h2>

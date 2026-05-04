@@ -1,11 +1,11 @@
-.header {
+.header-nextegen {
   position: fixed;
   width: 100%;
   top: 20px;
   z-index: 1000;
 }
 
-.header-container {
+.header-container-nextegen {
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
   max-width: 1200px;
   margin: auto;
@@ -18,23 +18,25 @@
   border-radius: 12px;
 }
 
-.logo {
+.logo-nextegen {
   width: 120px;
 }
 
-.nav {
+.nav-nextegen {
   display: flex;
   gap: 30px;
 }
 
-.nav a {
+.nav-nextegen .button-nextegen {
   color: #fff;
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 600;
+  background-color: transparent;
+  border: none;
 }
 
-.contact-btn {
+.contact-btn-nextegen {
   background: #fff;
   color: #6b0946;
   border: none;
@@ -42,16 +44,17 @@
   border-radius: 20px;
   cursor: pointer;
   font-weight: bold;
+  text-decoration: none;
 }
 
-.hamburger {
+.hamburger-nextegen {
   display: none;
   color: white;
   cursor: pointer;
 }
 
 /* MOBILE MENU */
-.mobile-menu {
+.mobile-menu-nextegen {
   position: fixed;
   top: 96px;
   right: -100%;
@@ -66,42 +69,47 @@
   border-radius: 8px;
 }
 
-.mobile-menu.show {
+.mobile-menu-nextegen.show {
   right: 10px;
 }
 
-.mobile-menu a {
-  color: white;
+.mobile-menu-nextegen .button-nextegen-mobile {
   font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  text-align: left;
 }
 
-.mobile-contact {
+.mobile-contact-nextegen {
   margin-top: 20px;
   padding: 12px;
   background: white;
   border: none;
   border-radius: 10px;
   color: #6b0946;
+  text-decoration: none;
 }
 
 /* RESPONSIVO */
 @media (max-width: 900px) {
-    .header {
+    .header-nextegen {
         width: 96%;
         top: 18px;
         left: 2%;
         right: 2%;
     }
 
-  .nav {
+  .nav-nextegen {
     display: none;
   }
 
-  .contact-btn {
+  .contact-btn-nextegen {
     display: none;
   }
 
-  .hamburger {
+  .hamburger-nextegen {
     display: block;
   }
 }

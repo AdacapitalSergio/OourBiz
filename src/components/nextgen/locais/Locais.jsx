@@ -9,7 +9,7 @@ import icon3 from "../../../assets/imagens/icon_locais3.png";
 
 export default function Locais() {
   return (
-    <section className="container-locais">
+    <section className="container-locais" id="programacao-nextgen">
       <h2>O que vai acontercer no OurBiz NextGen?</h2>
 
       <div className="locais-grid">

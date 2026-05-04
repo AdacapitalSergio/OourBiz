@@ -90,24 +90,24 @@ export default function ModalSolicitarServico({ open, onClose }) {
 					initial={{ opacity: 0 }} 
 					animate={{ opacity: 1 }} 
 					exit={{ opacity: 0 }} 
-					className="modal-overlay2" 
+					className="modal-overlay-solicitarservico" 
 				> 
 					<motion.div 
 						initial={{ scale: 0.9, opacity: 0 }} 
 						animate={{ scale: 1, opacity: 1 }} 
 						exit={{ scale: 0.9, opacity: 0 }} 
-						className="modal-container" 
+						className="modal-container-solicitarservico" 
 					> 
-						<button onClick={onClose} className="modal-closem"> 
+						<button onClick={onClose} className="modal-closem-solicitarservico"> 
 							<X /> 
 						</button> 
 						
-						<div className="card"> 
-							<div className="modal-contentm"> 
-								<h2 className="modal-title"> Entre em contacto agora mesmo! </h2> 
+						<div className="card-solicitarservico"> 
+							<div className="modal-contentm-solicitarservico"> 
+								<h2 className="modal-title-solicitarservico"> Entre em contacto agora mesmo! </h2> 
 								
-								<form onSubmit={handleSubmit} className="modal-grid"> 
-									<div className="modal-column"> 
+								<form onSubmit={handleSubmit} className="modal-grid-solicitarservico"> 
+									<div className="modal-column-solicitarservico"> 
 										<input type="text" name="seuNome" placeholder="Digite seu nome completo" value={formData.seuNome} onChange={handleChange} required /> 
 										<select name="cidade" value={formData.cidade} onChange={handleChange} required > 
 											<option value="">Selecione sua província de residência</option> 
@@ -124,7 +124,7 @@ export default function ModalSolicitarServico({ open, onClose }) {
                  						<input type="text" name="seuTelefone" placeholder="Digite seu número de telefone ex: 900 000 000" value={formData.seuTelefone} onChange={handleChange} required /> 
 									</div> 
 									
-									<div className="modal-column"> 
+									<div className="modal-column-solicitarservico"> 
 										
 										<select name="suaEmpresa" value={formData.suaEmpresa} onChange={handleChange} required > 
 											<option value="">Selecione a área de atuação</option> 
@@ -146,24 +146,24 @@ export default function ModalSolicitarServico({ open, onClose }) {
 												<option key={sub} value={sub}> {sub} </option> 
 											))} 
 										</select> 
-										<div className="contact-box">
-										<p style={{fontWeight: "bolder", fontSize: "14px"}}>Como prefere ser contactado?</p>
-										<div className="radio-group">
-											<label>
-											<input type="radio" name="contactoPreferido" value="whatsapp" checked={formData.contactoPreferido === "whatsapp"} onChange={handleChange} />
-											Whatsapp
-											</label>
-											<label>
-											<input type="radio" name="contactoPreferido" value="email" checked={formData.contactoPreferido === "email"} onChange={handleChange} />
-											Pelo e-mail
-											</label>
+										<div className="contact-box-solicitarservico">
+											<p style={{fontWeight: "bolder", fontSize: "14px"}}>Como prefere ser contactado?</p>
+											<div className="radio-group-solicitarservico">
+												<label>
+													<input type="radio" name="contactoPreferido" value="whatsapp" checked={formData.contactoPreferido === "whatsapp"} onChange={handleChange} />
+													Whatsapp
+												</label>
+												<label>
+													<input type="radio" name="contactoPreferido" value="email" checked={formData.contactoPreferido === "email"} onChange={handleChange} />
+													E-mail
+												</label>
+											</div>
+											<p className="contact-note-solicitarservico">
+												Você não estará se comprometendo com nada ao nos contactar.
+											</p>
 										</div>
-										<p className="contact-note">
-											Você não estará se comprometendo com nada ao nos contactar.
-										</p>
-										</div>
-										<div className="modal-actions"> 
-											<button type="submit" disabled={loading} className="btn-enviar" > {loading ? "Enviando..." : "Enviar pedido"} </button> 
+										<div className="modal-actions-solicitarservico"> 
+											<button type="submit" disabled={loading} className="btn-enviar-solicitarservico" > {loading ? "Enviando..." : "Enviar pedido"} </button> 
 										</div> 
 									</div> 
 								</form> 

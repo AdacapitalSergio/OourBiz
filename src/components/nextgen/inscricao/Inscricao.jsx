@@ -68,14 +68,14 @@ export default function Inscricao() {
             });
 
         } catch (error) {
-            toast.error("Erro ao enviar inscrição!");
+            toast.error("Erro ao enviar inscrição, tente mais tarde!");
         } finally {
             setLoading(false);
         }
     };
 
     return (
-        <section className="inscricao-section">
+        <section className="inscricao-section" id="inscricao-nextgen">
 
             <div className="overlay-inscricao"></div>
 
