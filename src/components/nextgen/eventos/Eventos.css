@@ -48,6 +48,11 @@
     flex-shrink: 0;
 }
 
+.card-evento:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
 /* MAPA */
 .mapa {
     width: 100%;
