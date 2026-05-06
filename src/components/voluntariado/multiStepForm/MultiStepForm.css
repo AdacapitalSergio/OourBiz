@@ -46,6 +46,21 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 2rem;
+    gap: 16px;
+}
+
+.step-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.step-container p {
+    font-size: 0.6rem;
+    color: #111;
+    font-weight: 600;
 }
 
 .step {
@@ -72,12 +87,20 @@
     gap: 12px;
 }
 
+.form-step label{
+    color:#6b0946;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 10px 0 0 0;
+}
+
 input, textarea {
     padding: 12px;
     border-radius: 8px;
     border: 1px solid #ddd;
     width: 90%;
     background-color: #eee;
+    margin: o;
 }
 
 select {
@@ -156,12 +179,24 @@ textarea {
 .teste-div {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
     width: max-content;
     gap: 8px;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.teste-div span {
+    color: #222;
+    font-size: small;
+}
+
+.teste-div input[type="radio"], .teste-div input[type="checkbox"] {
+    margin: 0;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
 }
 
 .teste-inp {
-    margin-bottom: 6px;
+    margin-bottom: 0;
 }

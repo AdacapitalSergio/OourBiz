@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { enviarInscricao } from "../../../services/websiteService";
+import Counter from "./Counter"; // Importando o componente que criamos
 import "./Inscricao.css";
 
 export default function Inscricao() {
-
-    // ⏳ DATA FINAL (DEFINE AQUI)
-    const targetDate = new Date("2025-05-10T23:59:59").getTime();
+    // 🗓️ DATA ALVO: Ajustada para 2026 para o contador ter o que contar
+    const targetDate = new Date("2026-05-08T23:59:59").getTime();
 
     const [time, setTime] = useState({
         dias: 0,
@@ -26,25 +26,34 @@ export default function Inscricao() {
 
     const [loading, setLoading] = useState(false);
 
-    // ⏱️ CONTADOR
+    // ⏱️ LÓGICA DO CONTADOR (Baseada no vídeo)
     useEffect(() => {
-        const interval = setInterval(() => {
+        const updateCountdown = () => {
             const now = new Date().getTime();
             const distance = targetDate - now;
 
-            if (distance <= 0) return;
+            if (distance < 0) return; // Se a data passou, não faz nada
 
-            setTime({
-                dias: Math.floor(distance / (1000 * 60 * 60 * 24)),
-                horas: Math.floor((distance / (1000 * 60 * 60)) % 24),
-                minutos: Math.floor((distance / 1000 / 60) % 60),
-                segundos: Math.floor((distance / 1000) % 60)
-            });
-        }, 1000);
+            // Matemática exata para converter milissegundos
+            const d = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const s = Math.floor((distance % (1000 * 60)) / 1000);
 
+            setTime({ dias: d, horas: h, minutos: m, segundos: s });
+        };
+
+        // Roda uma vez logo no início
+        updateCountdown();
+
+        // Cria o intervalo de 1 segundo
+        const interval = setInterval(updateCountdown, 1000);
+
+        // Limpa o intervalo ao sair da página
         return () => clearInterval(interval);
-    }, []);
+    }, [targetDate]);
 
+    // Handlers do formulário permanecem iguais
     const handleChange = (e) => {
         const { name, value } = e.target;
         setForm({ ...form, [name]: value });
@@ -56,7 +65,7 @@ export default function Inscricao() {
 
         try {
             await enviarInscricao(form);
-            toast.success("Inscrição realizada com sucesso!");
+            toast.success("Inscrição realizada com sucesso, entraremos em contacto!");
 
             setForm({
                 nome: "",
@@ -68,6 +77,7 @@ export default function Inscricao() {
             });
 
         } catch (error) {
+            console.log(error.response?.data);
             toast.error("Erro ao enviar inscrição, tente mais tarde!");
         } finally {
             setLoading(false);
@@ -76,56 +86,41 @@ export default function Inscricao() {
 
     return (
         <section className="inscricao-section" id="inscricao-nextgen">
-
             <div className="overlay-inscricao"></div>
-
             <div className="inscricao-container">
-
-                {/* LEFT */}
+                
                 <div className="inscricao-left">
-
                     <span className="tag">Inscrição</span>
+                    <h1>Inscreva-se agora mesmo <br /> e garanta já a sua vaga!</h1>
+                    <p className="alerta">Att: As vagas são limitadas</p>
 
-                    <h1>
-                        Inscreva-se agora mesmo <br />
-                        e garanta já a sua vaga!
-                    </h1>
-
-                    <p className="alerta">
-                        Att: As vagas são limitadas
-                    </p>
-
-                    {/* CONTADOR */}
+                    {/* CONTADOR CHAMANDO O COMPONENTE COUNTER */}
                     <div className="contador">
                         <p>Faltam</p>
                         <div className="tempo">
-                            <div><span>{time.dias}</span><small>Dias</small></div>
-                            <div><span>{time.horas}</span><small>Horas</small></div>
-                            <div><span>{time.minutos}</span><small>Minutos</small></div>
-                            <div><span>{time.segundos}</span><small>Segundos</small></div>
+                            <Counter title="Dias" number={time.dias} />
+                            <Counter title="Horas" number={String(time.horas).padStart(2, '0')} />
+                            <Counter title="Minutos" number={String(time.minutos).padStart(2, '0')} />
+                            <Counter title="Segundos" number={String(time.segundos).padStart(2, '0')} />
                         </div>
                     </div>
-
                 </div>
 
-                {/* RIGHT FORM */}
                 <div className="form-box">
-
                     <h3>Formulário de inscrição</h3>
-
                     <form onSubmit={handleSubmit}>
 
                         <label>Nome completo</label>
-                        <input name="nome" value={form.nome} onChange={handleChange} required />
+                        <input name="nome" value={form.nome} onChange={handleChange} placeholder="Digite seu nome..." required />
 
                         <label>Telefone</label>
-                        <input name="telefone" value={form.telefone} onChange={handleChange} required />
+                        <input name="telefone" value={form.telefone} onChange={handleChange} placeholder="Digite seu telefone..." required />
 
                         <label>E-mail</label>
-                        <input type="email" name="email" value={form.email} onChange={handleChange} required />
+                        <input type="email" name="email" value={form.email} onChange={handleChange} placeholder="Digite seu e-mail..." required />
 
                         <label>Instituição de ensino</label>
-                        <input name="instituicao" value={form.instituicao} onChange={handleChange} />
+                        <input name="instituicao" value={form.instituicao} onChange={handleChange} placeholder="Digite a instituição de ensino..." />
 
                         <label>Vínculo laboral</label>
                         <select name="vinculo" value={form.vinculo} onChange={handleChange}>
@@ -147,9 +142,7 @@ export default function Inscricao() {
                         </button>
 
                     </form>
-
                 </div>
-
             </div>
         </section>
     );

@@ -22,7 +22,7 @@ export default function Header() {
         if (el) {
           el.scrollIntoView({ behavior: "smooth" });
         }
-      }, 200); // espera render
+      }, 1000); // espera render
     } else {
       const el = document.getElementById(id);
       if (el) {

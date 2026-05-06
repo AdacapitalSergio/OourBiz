@@ -3,11 +3,33 @@ import { eventos } from "../../../data/mentoresData";
 import { CalendarDays, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import "./Eventos.css";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export default function Eventos() {
 
     const containerRef = useRef(null);
     const [index, setIndex] = useState(0);
+
+    const navigate = useNavigate();
+    const location = useLocation();
+  
+    const scrollToSection = (id) => {
+      if (location.pathname !== "/nextgen") {
+        navigate("/nextgen");
+  
+        setTimeout(() => {
+          const el = document.getElementById(id);
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 1000); // espera render
+      } else {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    };
 
     const scroll = (direction) => {
         const container = containerRef.current;
@@ -67,7 +89,7 @@ export default function Eventos() {
 
                             </div>
 
-                            <button className="btn-inscrever">
+                            <button className="btn-inscrever" onClick={() => scrollToSection("inscricao-nextgen")}>
                                 Inscrever-se
                             </button>
 

@@ -1,4 +1,5 @@
 import axios from "axios";
+import { datalist } from "framer-motion/m";
 
 const API_URL2 = "https://api.v1.ourbiz.ao/api"
 
@@ -117,11 +118,24 @@ export const enviarCandidatura = async (dados) => {
 };
 
 export const enviarInscricao = async (data) => {
-    const response = await axios.post(`${API_URL2}/inscricao`, data);
-    return response.data;
+    try {
+        const response = await axios.post(`${API_URL2}/nextgen/inscrever/`, data);
+        return response.data;
+    } catch (error) {
+        console.error("Erro ao enviar o formulário:", error);
+        throw error;
+    }
+    
 };
 
 export const enviarFormularioVoluntariado = async (data) => {
-    const response = await axios.post(`${API_URL2}/voluntariado`, data);
-    return response.data;
+  try {
+        console.log(data)
+        const response = await axios.post(`${API_URL2}/nextgen/candidatar/`, data);
+        return response.data;
+    } catch (error) {
+        console.log(data)
+        console.error("Erro ao enviar o formulário:", error);
+        throw error;
+    }
 };

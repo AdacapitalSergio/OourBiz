@@ -1,93 +1,23 @@
-/*import React from 'react';
-import './estiloArtigosRecentes.css';
-
-const artigos = [
-  {
-    titulo: "Impacto das IA nas empresas.",
-    imagem: "../../assets/imagens/bebe.png",
-    link: "#"
-  },
-  {
-    titulo: "O potencial da inovação em África.",
-    imagem: "/assets/africa.jpg",
-    link: "#"
-  },
-  {
-    titulo: "A sustentabilidade e as empresas.",
-    imagem: "/assets/sustentabilidade.jpg",
-    link: "#"
-  }
-];
-
-const ArtigosRecentes = () => {
-  return (
-    <section className="artigos-container">
-        <div className='div-cont-curva'>
-          <h2 className="titulo-secao">Artigos recentes</h2>
-            <div className="artigos-lista">
-                {artigos.map((artigo, index) => (
-                <div
-                    key={index}
-                    className="artigo-card"
-                    style={{ backgroundImage: `url(${artigo.imagem})` }}
-                >
-                    <a href={artigo.link} className="botao-ler">Ler</a>
-                    <div className="overlay-titulo">
-                    <p>{artigo.titulo}</p>
-                    </div>
-                </div>
-                ))}
-            </div>
-
-            <div className="barra-indicador">
-                <div className="barra-preenchida"></div>
-                <div className="barra-restante"></div>
-            </div>
-
-            <h2 className="titulo-secao">Eventos</h2>
-            <div className="artigos-lista">
-                {artigos.map((artigo, index) => (
-                <div
-                    key={index}
-                    className="artigo-card"
-                    style={{ backgroundImage: `url(${artigo.imagem})` }}
-                >
-                    <a href={artigo.link} className="botao-ler">Ler</a>
-                    <div className="overlay-titulo">
-                    <p>{artigo.titulo}</p>
-                    </div>
-                </div>
-                ))}
-            </div>
-
-            <div className="barra-indicador">
-                <div className="barra-preenchida"></div>
-                <div className="barra-restante"></div>
-            </div>
-        </div>
-    </section>
-  );
-};
-
-export default ArtigosRecentes;
-*/
 import React, { useState, useEffect, useRef } from 'react';
 import './estiloArtigosRecentes.css';
+import imagem1 from '../../assets/imagens/ourbizEvento1.png';
+import imagem2 from '../../assets/imagens/ourbizEvento2.png';
+import imagem3 from '../../assets/imagens/ourbizEvento3.png';
 
 const artigos = [
   {
-    titulo: "Impacto das IA nas empresas.",
-    imagem: "../../assets/imagens/bebe.png",
-    link: "#"
+    titulo: "OurBiz-NextGen",
+    imagem: imagem1,
+    link: "/nextgen"
   },
   {
     titulo: "O potencial da inovação em África.",
-    imagem: "/assets/africa.jpg",
+    imagem: imagem2,
     link: "#"
   },
   {
     titulo: "A sustentabilidade e as empresas.",
-    imagem: "/assets/sustentabilidade.jpg",
+    imagem: imagem3,
     link: "#"
   }
 ];
@@ -130,7 +60,7 @@ const ArtigosRecentes = () => {
             className="artigo-card"
             style={{ backgroundImage: `url(${artigo.imagem})` }}
           >
-            <a href={artigo.link} className="botao-ler">Ler</a>
+            <a href={artigo.link} target="_blank" rel="noopener noreferrer" className="botao-ler">Saber mais</a>
             <div className="overlay-titulo">
               <p>{artigo.titulo}</p>
             </div>
