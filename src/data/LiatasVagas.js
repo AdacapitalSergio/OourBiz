@@ -357,5 +357,91 @@ export const ListaVagasOurBiz = [
       ],
       final: "Na OurBiz, cada colaborador não é apenas um funcionário, é um agente de transformação empresarial."
     }
-  }
+  },
+  {
+    id: 7,
+    vaga: "PROMOTOR EMPRESARIAL",
+    numero_vagas: 1,
+    empresa: "OurBiz",
+    area: "OurBiz-Comercial",
+    local_trabalho: "Luanda, Benguela, Lubango (Huíla)-Angola",
+
+    junte_nos: "A Ourbiz é uma consultora empresarial angolana focada no crescimento de MPMEs, startups e empreendedores, oferecendo soluções em gestão, estratégia, formação e desenvolvimento empresarial. Estamos à procura de Promotores Empresariais para apoiar a expansão da marca e aproximação às empresas.",
+
+    missao: "O profissional será responsável pela divulgação dos serviços da Ourbiz, captação de clientes e promoção de soluções empresariais junto de empreendedores e empresas.",
+
+    requisitos: [
+      "Excelente comunicação;",
+      "Perfil empreendedor;",
+      "Boa capacidade de persuasão;",
+      "Facilidade em criar relacionamentos;",
+      "Organização e responsabilidade;",
+      "Experiência comercial será valorizada."
+    ],
+
+    actividades: [
+      "Prospectar clientes e parceiros;",
+      "Promover os serviços da Ourbiz;",
+      "Identificar oportunidades de negócio;",
+      "Agendar reuniões comerciais;",
+      "Apoiar eventos e ativações empresariais;",
+      "Fazer acompanhamento comercial dos clientes;",
+      "Representar institucionalmente a marca."
+    ],
+    diferenciais: [
+      "Interesse por negócios e empreendedorismo;",
+      "Experiência com vendas externas;",
+      "Conhecimentos em marketing ou gestão."
+    ],
+
+    perfil: [
+      "Mentalidade de crescimento",
+      "Resiliência e persistência",
+      "Foco em resultados",
+      "Boa comunicação interpessoal",
+      "Espírito empreendedor"
+    ],
+
+    beneficios: [
+      "Regime: Flexível (trabalho remoto);",
+      "Remuneração: 50.000,00 Kzs Fixo + comissão (10% por cada novo cliente);",
+      "Bónus por desempenho",
+      "Formação contínua;",
+      "Plano de comissões atrativo;",
+      "Crescimento profissional;",
+      "Integração em projetos empresariais inovadores;",
+      "Possibilidade de evolução para cargos comerciais."
+    ],
+
+    etapas: [
+      "Análise curricular",
+      "Entrevista comercial",
+      "Simulação de venda",
+      "Entrevista final com CEO",
+      "Período experimental de 3 meses"
+    ],
+
+    documentos: [
+      "CV atualizado",
+      "BI e NIF",
+      "Certificados (se aplicável)"
+    ],
+
+    cultura: {
+      descricao: "A OurBiz é uma empresa de consultoria empresarial orientada para resultados e transformação real de negócios.",
+      acreditamos: [
+        "Empresas crescem com estratégia, disciplina e execução",
+        "O conhecimento deve ser prático e aplicável",
+        "O crescimento pessoal e profissional caminham juntos"
+      ],
+      valorizamos: [
+        "Responsabilidade",
+        "Excelência",
+        "Mentalidade de crescimento",
+        "Espírito empreendedor",
+        "Trabalho em equipa"
+      ],
+      final: "Na OurBiz, cada colaborador não é apenas um funcionário, é um agente de transformação empresarial."
+    }
+  },
 ];

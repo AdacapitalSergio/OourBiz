@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./estiloNossosProfissionais.css";
 import ceo from "../../assets/imagens/ceo.png";
-import david from "../../assets/imagens/david.png";
+import david from "../../assets/imagens/irmaoLelis.jpeg";
 import sonia from "../../assets/imagens/sonia2.jpeg";
 import {
   FaFacebook,
