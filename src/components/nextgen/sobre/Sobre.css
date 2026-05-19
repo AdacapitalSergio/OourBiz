@@ -36,8 +36,8 @@
 }
 
 .sobre-img {
-  max-width: 22rem;
-  height: 24rem;
+  max-width: 20rem;
+  height: auto;
   border-radius: 20px;
   box-shadow: 0 0 25px 22px rgba(117, 18, 79, 0.4);
   margin-top: 5rem;

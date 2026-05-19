@@ -361,7 +361,7 @@ export const ListaVagasOurBiz = [
   {
     id: 7,
     vaga: "PROMOTOR EMPRESARIAL",
-    numero_vagas: 1,
+    numero_vagas: 42,
     empresa: "OurBiz",
     area: "OurBiz-Comercial",
     local_trabalho: "Luanda, Benguela, Lubango (Huíla)-Angola",

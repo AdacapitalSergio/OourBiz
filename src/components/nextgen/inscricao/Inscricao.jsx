@@ -6,7 +6,7 @@ import "./Inscricao.css";
 
 export default function Inscricao() {
     // 🗓️ DATA ALVO: Ajustada para 2026 para o contador ter o que contar
-    const targetDate = new Date("2026-05-08T23:59:59").getTime();
+    const targetDate = new Date("2026-05-30T23:59:59").getTime();
 
     const [time, setTime] = useState({
         dias: 0,
