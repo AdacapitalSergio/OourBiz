@@ -1,3 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+    --color-brand-dark: #009245;
+    --color-brand-emerald: #8CC63F;
+    --color-brand-yellow: #E6EE31;
+    
+    --font-sans: "Ubuntu", ui-sans-serif, system-ui, sans-serif;
+    --font-serif: "Libre Baskerville", ui-serif, Georgia, sans-serif;
+}
+
+@layer base {
+    body {
+        font-family: var(--font-sans);
+        background-color: white;
+        color: black;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
 html, body {
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;

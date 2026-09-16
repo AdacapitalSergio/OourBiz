@@ -33,7 +33,7 @@ export default function Banner() {
 
   useEffect(() => {
     const typedTitle = new Typed(titleRef.current, {
-      strings: ["Ourbiz-NextGen"],
+      strings: ["OurBiz-NextGen"],
       typeSpeed: 120,
       showCursor: false,
       onComplete: () => {

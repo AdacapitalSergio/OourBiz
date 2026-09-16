@@ -8,6 +8,7 @@ import QuartaSection from "../components/quartaSection/quartaSection";
 import CriaSeuSite from "../components/criaSeuSite/criaSeuSite";
 import WhatsappPulse from "../components/whatsApp/WhatsappPulse";
 import CrieSeuNegocio from "../components/crieSeuNegocio/crieSeuNegocio";
+import DetalheServicos from "../components/novoDetalheServicos/DetalheServicos";
 
 export default function Servicos() {
 
@@ -15,6 +16,7 @@ export default function Servicos() {
     <>
         <Header />
         <ServicoBanner />
+        {/*<DetalheServicos /> */}
         <EncontreMelhorServico />
         <CrieSeuNegocio />
         <SobreFooter />

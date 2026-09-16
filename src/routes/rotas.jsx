@@ -15,6 +15,7 @@ import DetalhesVaga from '../pages/newVagas/DetalhesVagas';
 import NextGen from '../pages/NextGen';
 import Voluntariado from '../pages/Voluntariado';
 import CadastroVoluntariado from '../pages/CadastroVoluntariado';
+import DashboardLayout from '../pages/Area-Cliente/DashboardLayout';
 
 function Rotas() {
 
@@ -38,7 +39,7 @@ function Rotas() {
           <Route path="/vagas" element={<CardVagas />} />
           <Route path="/detalhesvagas/:vagaId" element={<DetalhesVaga />} />
 
-          <Route path='/dashboard-cliente' element={ <DashboardCliente /> } />
+          <Route path='/dashboard-cliente' element={ <DashboardLayout /> } />
           <Route path='/perfil-cliente' element={ <PerfilCliente /> } />
         </Routes>
       </BrowserRouter>

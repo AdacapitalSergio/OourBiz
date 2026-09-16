@@ -84,6 +84,10 @@ export default function LoginComp() {
           </button>
           <br />
 
+          {/* <Link className="link-login" to="/dashboard-cliente">
+            Login 2
+          </Link> */}
+
           <Link className="link-login" to="/cadastrar">
             Não possui uma conta? <span>Cadastrar-se.</span>
           </Link>
