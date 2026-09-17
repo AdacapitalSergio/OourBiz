@@ -13,7 +13,7 @@ const CardVagas = () => {
       <Header />
 
       <section className="vagas-container">
-        <h1 className="vagas-title">As nossas vagas disponíveis</h1>
+        <h1 className="vagas-title">(hghbihklnbhj)As nossas vagas disponíveis</h1>
         <p className="vagas-subtitle">
           Encontre a oportunidade ideal para crescer connosco
         </p>
