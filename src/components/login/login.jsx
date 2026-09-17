@@ -89,7 +89,7 @@ export default function LoginComp() {
           </Link> */}
 
           <Link className="link-login" to="/cadastrar">
-            Não possui uma conta? <span>Cadastrar-se.</span>
+            N(hgjhgjhg)ão possui uma conta?) <span>Cadastrar-se.</span>
           </Link>
         </form>
       </article>
